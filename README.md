@@ -342,7 +342,7 @@ This project is proprietary and confidential.
 
 ## Support
 
-For issues and questions, please contact support@drivesight.com
+For issues and questions, please contact Mukesh-SCS
 
 ## Roadmap
 
