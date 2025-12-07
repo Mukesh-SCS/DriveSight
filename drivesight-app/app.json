@@ -1,0 +1,45 @@
+{
+  "expo": {
+    "name": "DriveSight",
+    "slug": "drivesight",
+    "version": "1.0.0",
+    "sdkVersion": "49.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTabletMode": true,
+      "bundleIdentifier": "com.drivesight.app"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./src/assets/images/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "package": "com.drivesight.app",
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ]
+    },
+    "web": {
+      "favicon": "./src/assets/images/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow DriveSight to access your camera to scan traffic signs."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow DriveSight to access your photos.",
+          "cameraCameraPermission": "Allow DriveSight to access your camera."
+        }
+      ]
+    ]
+  }
+}
