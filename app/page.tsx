@@ -1,5 +1,5 @@
 import { cookies } from "next/headers";
-import { StateSelector } from "@/components/StateSelector";
+import { Dashboard } from "@/components/Dashboard";
 import { mergeStateSummaries } from "@/lib/states";
 import { createClient } from "@/utils/supabase/server";
 
@@ -15,7 +15,7 @@ export default async function Page() {
 
   return (
     <main className="app-shell">
-      <StateSelector states={states} />
+      <Dashboard states={states} />
     </main>
   );
 }

@@ -1,8 +1,14 @@
 import type { Metadata } from "next";
+import { Plus_Jakarta_Sans } from "next/font/google";
 import Script from "next/script";
 import type { ReactNode } from "react";
 import { AppHeader } from "@/components/AppHeader";
 import "./globals.css";
+
+const jakarta = Plus_Jakarta_Sans({
+  subsets: ["latin"],
+  variable: "--font-sans",
+});
 
 export const metadata: Metadata = {
   title: "DriveSight",
@@ -15,8 +21,8 @@ export default function RootLayout({
   children: ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body suppressHydrationWarning>
+    <html className={jakarta.variable} lang="en" suppressHydrationWarning>
+      <body className={jakarta.className} suppressHydrationWarning>
         <Script id="remove-pronounce-extension-root" strategy="beforeInteractive">
           {`
             (() => {
