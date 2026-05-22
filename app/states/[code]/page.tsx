@@ -34,9 +34,12 @@ export default async function StatePage({ params }: StatePageProps) {
 
   const { data: questionRows } = await supabase
     .from("driving_test_questions")
-    .select("id,state_code,prompt,question,choices,options,answer_index,correct_answer_index,explanation")
+    .select(
+      "id,state_code,prompt,question,choices,options,answer_index,correct_answer_index,explanation,category,difficulty,source,is_active",
+    )
     .eq("state_code", state.code)
-    .limit(20);
+    .eq("is_active", true)
+    .limit(100);
 
   const questions = normalizeQuestions(questionRows, state.code);
 

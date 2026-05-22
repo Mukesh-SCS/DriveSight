@@ -12,7 +12,7 @@ type AppHeaderClientProps = {
   user: User | null;
 };
 
-const AUTH_PATHS = ["/login"];
+const AUTH_PATHS = ["/login", "/auth/reset-password"];
 
 export function AppHeaderClient({ user }: AppHeaderClientProps) {
   const pathname = usePathname();

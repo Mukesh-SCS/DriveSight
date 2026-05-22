@@ -1,7 +1,6 @@
 "use server";
 
-import { cookies } from "next/headers";
-import { headers } from "next/headers";
+import { cookies, headers } from "next/headers";
 import { redirect } from "next/navigation";
 import { createClient } from "@/utils/supabase/server";
 
@@ -11,7 +10,7 @@ export async function login(formData: FormData) {
   const next = getSafeNextPath(formData);
 
   if (!email || !password) {
-    redirectWithMessage(next, "Email and password are required");
+    redirectWithMessage("/login", "Email and password are required", next);
   }
 
   const cookieStore = await cookies();
@@ -22,7 +21,7 @@ export async function login(formData: FormData) {
   });
 
   if (error) {
-    redirectWithMessage(next, error.message);
+    redirectWithMessage("/login", error.message, next);
   }
 
   redirect(next);
@@ -34,7 +33,7 @@ export async function signUp(formData: FormData) {
   const next = getSafeNextPath(formData);
 
   if (!email || !password) {
-    redirectWithMessage(next, "Email and password are required");
+    redirectWithMessage("/login", "Email and password are required", next);
   }
 
   const cookieStore = await cookies();
@@ -42,13 +41,16 @@ export async function signUp(formData: FormData) {
   const { error } = await supabase.auth.signUp({
     email,
     password,
+    options: {
+      emailRedirectTo: `${await getSiteOrigin()}/auth/callback?next=${encodeURIComponent(next)}`,
+    },
   });
 
   if (error) {
-    redirectWithMessage(next, error.message);
+    redirectWithMessage("/login", error.message, next);
   }
 
-  redirectWithMessage(next, "Check your email to confirm your account");
+  redirectWithMessage("/login", "Check your email to confirm your account", next);
 }
 
 export async function resetPassword(formData: FormData) {
@@ -56,22 +58,53 @@ export async function resetPassword(formData: FormData) {
   const next = getSafeNextPath(formData);
 
   if (!email) {
-    redirectWithMessage(next, "Enter your email to reset your password");
+    redirectWithMessage("/login", "Enter your email to reset your password", next);
   }
 
   const cookieStore = await cookies();
-  const requestHeaders = await headers();
-  const origin = requestHeaders.get("origin") ?? "http://localhost:3000";
+  const origin = await getSiteOrigin();
   const supabase = createClient(cookieStore);
+  const redirectTo = `${origin}/auth/callback?next=${encodeURIComponent("/auth/reset-password")}`;
+
   const { error } = await supabase.auth.resetPasswordForEmail(email, {
-    redirectTo: `${origin}/login`,
+    redirectTo,
   });
 
   if (error) {
-    redirectWithMessage(next, error.message);
+    redirectWithMessage("/login", error.message, next);
   }
 
-  redirectWithMessage(next, "Password reset link sent");
+  redirectWithMessage(
+    "/login",
+    "Password reset email sent. Check your inbox for the link.",
+    next,
+  );
+}
+
+export async function updatePassword(formData: FormData) {
+  const password = String(formData.get("password") ?? "");
+  const confirmPassword = String(formData.get("confirmPassword") ?? "");
+
+  if (!password || password.length < 6) {
+    redirectWithMessage(
+      "/auth/reset-password",
+      "Password must be at least 6 characters",
+    );
+  }
+
+  if (password !== confirmPassword) {
+    redirectWithMessage("/auth/reset-password", "Passwords do not match");
+  }
+
+  const cookieStore = await cookies();
+  const supabase = createClient(cookieStore);
+  const { error } = await supabase.auth.updateUser({ password });
+
+  if (error) {
+    redirectWithMessage("/auth/reset-password", error.message);
+  }
+
+  redirect("/?message=Password updated successfully");
 }
 
 export async function logout() {
@@ -89,13 +122,35 @@ function getSafeNextPath(formData: FormData) {
   return next.startsWith("/") && !next.startsWith("//") ? next : "/";
 }
 
-function redirectWithMessage(next: string, message: string): never {
-  const loginUrl = new URL("/login", "http://localhost");
-  loginUrl.searchParams.set("message", message);
+async function getSiteOrigin() {
+  const requestHeaders = await headers();
+  const origin = requestHeaders.get("origin");
 
-  if (next !== "/") {
-    loginUrl.searchParams.set("next", next);
+  if (origin) {
+    return origin;
   }
 
-  redirect(`${loginUrl.pathname}${loginUrl.search}`);
+  const host = requestHeaders.get("x-forwarded-host") ?? requestHeaders.get("host");
+  const protocol = requestHeaders.get("x-forwarded-proto") ?? "http";
+
+  if (host) {
+    return `${protocol}://${host}`;
+  }
+
+  return process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
+}
+
+function redirectWithMessage(
+  path: string,
+  message: string,
+  next?: string,
+): never {
+  const url = new URL(path, "http://localhost");
+  url.searchParams.set("message", message);
+
+  if (next && next !== "/" && path === "/login") {
+    url.searchParams.set("next", next);
+  }
+
+  redirect(`${url.pathname}${url.search}`);
 }

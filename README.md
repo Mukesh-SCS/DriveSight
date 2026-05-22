@@ -6,7 +6,7 @@ DriveSight is a web app for US driving test prep. Users sign in, pick a state on
 
 - **Account required** — All app routes are protected; users must log in or create an account.
 - **State dashboard** — Interactive US map with per-state question counts, search, and a saved home state.
-- **Practice tests** — Multiple-choice questions per state with progress tracking, scoring, and explanations.
+- **Practice tests** — Shuffled questions and answer choices, category/difficulty tags, review summary, wrong-answer-only mode, and attempt history.
 - **Road signs library** — Dedicated viewer at `/road-signs` with sheet navigation, keyboard shortcuts, and scrollable high-resolution sheets.
 
 ## Tech stack
@@ -53,7 +53,33 @@ In the Supabase SQL editor, run the schema and seed data:
 supabase/schema.sql
 ```
 
-This creates `state_driving_tests` and `driving_test_questions` tables with read policies for authenticated access patterns used by the app.
+This creates:
+
+- `state_driving_tests` — state metadata and question counts
+- `driving_test_questions` — prompts, choices, metadata (`category`, `difficulty`, `source`, `is_active`)
+- `user_question_attempts` — per-user answer history (RLS: users can only access their own rows)
+
+Then run the migration (if upgrading an existing database):
+
+```bash
+supabase/migrations/20250522000000_question_metadata_and_attempts.sql
+```
+
+### California question bank (100 questions)
+
+Generate seed files:
+
+```bash
+npm run seed:california
+```
+
+Import in Supabase SQL editor:
+
+```bash
+supabase/seeds/california-100.sql
+```
+
+JSON format is also available at `supabase/seeds/california-100.json`.
 
 ### 4. Run locally
 
@@ -72,6 +98,7 @@ Open [http://localhost:3000](http://localhost:3000). You will be redirected to `
 | `npm run start` | Run the production server |
 | `npm run lint` | Run ESLint |
 | `npm run extract-signs` | Regenerate PNG sheets from `app/assets/us_road_symbol_signs.pdf` (requires `pip install pymupdf`) |
+| `npm run seed:california` | Generate 100 California practice questions (JSON + SQL) |
 
 ## Project structure
 
@@ -119,7 +146,12 @@ npm run extract-signs
 
 1. Set the same Supabase environment variables in your hosting provider (e.g. Vercel).
 2. Run `npm run build` and deploy the Next.js app.
-3. Ensure your Supabase project allows your production URL for auth redirects if you configure redirect URLs in the dashboard.
+3. In Supabase **Authentication → URL Configuration**, add redirect URLs:
+   - `http://localhost:3000/auth/callback`
+   - `https://your-domain.com/auth/callback`
+   - Set **Site URL** to your app origin (e.g. `http://localhost:3000`)
+
+4. Optional: set `NEXT_PUBLIC_SITE_URL` in `.env.local` if password reset emails need a fixed origin in production.
 
 ## License
 

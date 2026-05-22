@@ -2,9 +2,9 @@ import { cookies } from "next/headers";
 import Image from "next/image";
 import { redirect } from "next/navigation";
 import { login, resetPassword, signUp } from "@/app/auth/actions";
+import { PasswordField } from "@/components/PasswordField";
 import {
   IconEmail,
-  IconLock,
   IconMap,
   IconQuiz,
   IconSign,
@@ -131,23 +131,15 @@ export default async function LoginPage({ searchParams }: LoginPageProps) {
               </span>
             </label>
 
-            <label className="auth-field">
-              <span>Password</span>
-              <span className="auth-input-wrap">
-                <IconLock className="auth-field-icon" />
-                <input
-                  autoComplete="current-password"
-                  minLength={6}
-                  name="password"
-                  placeholder="Your password"
-                  required
-                  type="password"
-                />
-              </span>
-            </label>
+            <PasswordField required />
 
             <div className="forgot-password-row">
-              <button className="link-button" formAction={resetPassword} type="submit">
+              <button
+                className="link-button"
+                formAction={resetPassword}
+                formNoValidate
+                type="submit"
+              >
                 Forgot password?
               </button>
             </div>

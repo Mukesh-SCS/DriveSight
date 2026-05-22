@@ -41,7 +41,11 @@ export const createClient = async (request: NextRequest) => {
     data: { user },
   } = await supabase.auth.getUser();
 
-  if (!user && pathname !== "/login") {
+  const publicPaths = ["/login", "/auth/callback", "/auth/reset-password"];
+  const isPublicPath =
+    publicPaths.includes(pathname) || pathname.startsWith("/auth/callback");
+
+  if (!user && !isPublicPath) {
     const loginUrl = new URL("/login", request.url);
     loginUrl.searchParams.set(
       "next",

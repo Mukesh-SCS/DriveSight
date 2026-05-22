@@ -6,6 +6,8 @@ export type StateSummary = {
   y: number;
 };
 
+export type QuestionDifficulty = "easy" | "medium" | "hard";
+
 export type DrivingQuestion = {
   id: string;
   stateCode: string;
@@ -13,6 +15,9 @@ export type DrivingQuestion = {
   choices: string[];
   answerIndex: number;
   explanation: string;
+  category?: string;
+  difficulty?: QuestionDifficulty;
+  source?: string;
 };
 
 export const DEFAULT_STATES: StateSummary[] = [
@@ -137,7 +142,10 @@ function normalizeStateRow(row: unknown) {
   };
 }
 
-function normalizeQuestionRow(row: unknown, fallbackStateCode: string) {
+function normalizeQuestionRow(
+  row: unknown,
+  fallbackStateCode: string,
+): DrivingQuestion | null {
   if (!row || typeof row !== "object") {
     return null;
   }
@@ -149,9 +157,15 @@ function normalizeQuestionRow(row: unknown, fallbackStateCode: string) {
     value.answer_index ?? value.correct_answer_index ?? value.correctIndex ?? 0,
   );
 
+  if (value.is_active === false) {
+    return null;
+  }
+
   if (!prompt || choices.length < 2 || !Number.isFinite(answerIndex)) {
     return null;
   }
+
+  const difficulty = normalizeDifficulty(value.difficulty);
 
   return {
     id: String(value.id ?? `${fallbackStateCode}-${prompt}`),
@@ -160,7 +174,18 @@ function normalizeQuestionRow(row: unknown, fallbackStateCode: string) {
     choices,
     answerIndex,
     explanation: String(value.explanation ?? ""),
+    category: value.category ? String(value.category) : undefined,
+    difficulty,
+    source: value.source ? String(value.source) : undefined,
   };
+}
+
+function normalizeDifficulty(value: unknown): QuestionDifficulty | undefined {
+  const difficulty = String(value ?? "").toLowerCase();
+  if (difficulty === "easy" || difficulty === "medium" || difficulty === "hard") {
+    return difficulty;
+  }
+  return undefined;
 }
 
 function normalizeChoices(value: unknown): string[] {
@@ -201,6 +226,8 @@ function defaultQuestionsFor(stateCode: string): DrivingQuestion[] {
       answerIndex: 1,
       explanation:
         "School-zone signs require drivers to slow down and follow the posted limit when the zone is active.",
+      category: "school zones",
+      difficulty: "easy",
     },
     {
       id: `${stateCode}-right-on-red`,
@@ -215,6 +242,8 @@ function defaultQuestionsFor(stateCode: string): DrivingQuestion[] {
       answerIndex: 0,
       explanation:
         "A right turn on red generally requires a full stop and yielding to pedestrians and traffic unless a posted sign forbids it.",
+      category: "traffic signals",
+      difficulty: "easy",
     },
     {
       id: `${stateCode}-railroad-crossing`,
@@ -229,6 +258,8 @@ function defaultQuestionsFor(stateCode: string): DrivingQuestion[] {
       answerIndex: 1,
       explanation:
         "Flashing red railroad signals require stopping. Continue only after the warning ends and the tracks are clear.",
+      category: "road signs",
+      difficulty: "medium",
     },
     {
       id: `${stateCode}-work-zone`,
@@ -243,6 +274,8 @@ function defaultQuestionsFor(stateCode: string): DrivingQuestion[] {
       answerIndex: 1,
       explanation:
         "Orange signs warn of temporary road work. Drivers should slow down, leave space, and expect changing traffic patterns.",
+      category: "defensive driving",
+      difficulty: "medium",
     },
   ];
 }

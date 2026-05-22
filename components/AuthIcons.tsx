@@ -125,6 +125,44 @@ export function IconQuiz({ className }: IconProps) {
   );
 }
 
+export function IconEye({ className }: IconProps) {
+  return (
+    <svg
+      aria-hidden="true"
+      className={className}
+      fill="none"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z"
+        stroke="currentColor"
+        strokeWidth="1.8"
+      />
+      <circle cx="12" cy="12" r="3" stroke="currentColor" strokeWidth="1.8" />
+    </svg>
+  );
+}
+
+export function IconEyeOff({ className }: IconProps) {
+  return (
+    <svg
+      aria-hidden="true"
+      className={className}
+      fill="none"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M3 3l18 18M10.5 10.7A3 3 0 0 0 12 15a3 3 0 0 0 2.3-4.3M6.7 6.8C4.6 8.4 3 10.6 2 12c0 0 3.5 7 10 7 2 0 3.7-.6 5.1-1.6M17.4 17.3C19.4 15.7 21 13.5 22 12c0 0-3.5-7-10-7-1.3 0-2.5.3-3.6.7"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeWidth="1.8"
+      />
+    </svg>
+  );
+}
+
 export function IconSpark({ className }: IconProps) {
   return (
     <svg

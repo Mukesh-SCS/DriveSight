@@ -900,20 +900,43 @@ h1 {
 
 .question-card {
   border: 1px solid var(--line);
-  border-radius: 8px;
+  border-radius: var(--radius-md);
   margin: 0;
   padding: 16px;
+  transition:
+    border-color 160ms ease,
+    background 160ms ease;
+}
+
+.question-card.is-answered {
+  border-color: #93c5fd;
+}
+
+.question-card.is-unanswered:not(.is-correct):not(.is-wrong) {
+  border-style: dashed;
+}
+
+.question-card.is-correct {
+  background: #f0fdf4;
+  border-color: #86efac;
+}
+
+.question-card.is-wrong {
+  background: #fef2f2;
+  border-color: #fca5a5;
 }
 
 .question-card legend {
   color: var(--text);
+  display: grid;
   font-size: 17px;
   font-weight: 800;
+  gap: 10px;
   line-height: 1.35;
   padding: 0 0 10px;
 }
 
-.question-card legend span {
+.question-number {
   align-items: center;
   background: var(--blue);
   border-radius: 999px;
@@ -922,8 +945,137 @@ h1 {
   font-size: 12px;
   height: 24px;
   justify-content: center;
-  margin-right: 10px;
   width: 24px;
+}
+
+.question-prompt {
+  display: inline;
+}
+
+.question-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.question-tag {
+  background: var(--surface-muted);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  padding: 4px 10px;
+  text-transform: uppercase;
+}
+
+.question-tag.difficulty-easy {
+  background: #ecfdf5;
+  border-color: #86efac;
+  color: #166534;
+}
+
+.question-tag.difficulty-medium {
+  background: #fffbeb;
+  border-color: #fcd34d;
+  color: #92400e;
+}
+
+.question-tag.difficulty-hard {
+  background: #fef2f2;
+  border-color: #fca5a5;
+  color: #991b1b;
+}
+
+.review-summary {
+  background: var(--surface-muted);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  display: grid;
+  gap: 14px;
+  margin-bottom: 16px;
+  padding: 16px;
+}
+
+.review-summary-title {
+  font-size: 18px;
+  font-weight: 800;
+  margin: 0;
+}
+
+.review-summary-grid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.review-stat {
+  border-radius: var(--radius-sm);
+  display: grid;
+  gap: 4px;
+  padding: 12px;
+  text-align: center;
+}
+
+.review-stat strong {
+  font-size: 22px;
+  line-height: 1;
+}
+
+.review-stat span {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.review-stat.is-correct {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.review-stat.is-wrong {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.review-stat.is-unanswered {
+  background: #f1f5f9;
+  color: #475569;
+}
+
+.review-category-list {
+  display: grid;
+  gap: 8px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.review-category-list li {
+  align-items: center;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 12px;
+}
+
+.review-category-list strong {
+  color: var(--blue-dark);
+}
+
+.test-mode-note {
+  color: var(--muted);
+  font-size: 14px;
+  margin: 6px 0 0;
+}
+
+.test-empty {
+  color: var(--muted);
+  margin: 0;
+  padding: 24px 0;
 }
 
 .choice-list {
@@ -959,6 +1111,10 @@ h1 {
 .choice.is-wrong {
   background: #fff0ef;
   border-color: #e59b96;
+}
+
+.choice.is-muted {
+  opacity: 0.72;
 }
 
 .explanation {
@@ -1268,6 +1424,53 @@ h1 {
   min-width: 0;
   outline: none;
   padding: 0;
+}
+
+.auth-input-wrap-password {
+  padding-right: 6px;
+}
+
+.password-toggle {
+  align-items: center;
+  background: transparent;
+  border: 0;
+  border-radius: 8px;
+  color: var(--muted);
+  cursor: pointer;
+  display: grid;
+  flex-shrink: 0;
+  height: 36px;
+  place-items: center;
+  width: 36px;
+}
+
+.password-toggle:hover,
+.password-toggle:focus-visible {
+  background: #e2e8f0;
+  color: var(--text);
+  outline: none;
+}
+
+.auth-shell-centered {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: calc(100vh - 65px);
+  padding: 28px;
+}
+
+.auth-shell-centered .auth-guest {
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 14px;
+  margin: 0;
+  padding-top: 16px;
+  text-align: center;
+}
+
+.auth-shell-centered .auth-guest a {
+  color: var(--blue-dark);
+  font-weight: 700;
 }
 
 .forgot-password-row {

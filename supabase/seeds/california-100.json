@@ -1,0 +1,1402 @@
+[
+  {
+    "state_code": "CA",
+    "prompt": "What does an octagonal red sign mean?",
+    "choices": [
+      "Yield to cross traffic",
+      "Stop completely, then go when safe",
+      "Merge left",
+      "No parking anytime"
+    ],
+    "answer_index": 1,
+    "explanation": "Octagon signs are stop signs; you must stop before proceeding.",
+    "category": "road signs",
+    "difficulty": "easy"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "A yellow pennant-shaped sign on the left side of the road means:",
+    "choices": [
+      "No passing zone for traffic in both directions",
+      "No passing zone for traffic traveling in your direction",
+      "School crossing ahead",
+      "Lane ends ahead"
+    ],
+    "answer_index": 1,
+    "explanation": "The pennant marks the start of a no-passing zone for your direction of travel.",
+    "category": "road signs",
+    "difficulty": "easy"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "An orange sign with black letters usually indicates:",
+    "choices": [
+      "A recreation area",
+      "Road construction or maintenance",
+      "A hospital zone",
+      "A scenic overlook"
+    ],
+    "answer_index": 1,
+    "explanation": "Orange signs warn of work zones and temporary traffic control.",
+    "category": "road signs",
+    "difficulty": "easy"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "A round yellow sign with an X and RR means:",
+    "choices": [
+      "Rest area ahead",
+      "Railroad crossing ahead",
+      "Roundabout ahead",
+      "Road closed"
+    ],
+    "answer_index": 1,
+    "explanation": "This advance warning sign alerts drivers to an upcoming railroad crossing.",
+    "category": "road signs",
+    "difficulty": "easy"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "A fluorescent yellow-green sign is often used for:",
+    "choices": [
+      "Freeway exits",
+      "School zones and pedestrian areas",
+      "Parking restrictions",
+      "Toll plazas"
+    ],
+    "answer_index": 1,
+    "explanation": "This color improves visibility for school and pedestrian warnings.",
+    "category": "road signs",
+    "difficulty": "easy"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "A red circle with a slash over a symbol means:",
+    "choices": [
+      "The action shown is required",
+      "The action shown is prohibited",
+      "Warning only",
+      "Services available"
+    ],
+    "answer_index": 1,
+    "explanation": "A red slash means the illustrated action is not allowed.",
+    "category": "road signs",
+    "difficulty": "easy"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "A diamond-shaped yellow sign warns of:",
+    "choices": [
+      "Regulatory rules",
+      "Hazards or changing road conditions ahead",
+      "Services",
+      "Motorist services"
+    ],
+    "answer_index": 1,
+    "explanation": "Diamond yellow signs are general warning signs.",
+    "category": "road signs",
+    "difficulty": "easy"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "A white rectangular sign typically shows:",
+    "choices": [
+      "Warnings",
+      "Regulatory rules such as speed limits",
+      "Construction zones",
+      "Scenic routes"
+    ],
+    "answer_index": 1,
+    "explanation": "White rectangles usually communicate laws and regulations.",
+    "category": "road signs",
+    "difficulty": "easy"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "A green guide sign on a freeway usually provides:",
+    "choices": [
+      "Warnings",
+      "Direction and distance information",
+      "Prohibited actions",
+      "School zone limits"
+    ],
+    "answer_index": 1,
+    "explanation": "Green signs help drivers navigate routes and exits.",
+    "category": "road signs",
+    "difficulty": "easy"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "A blue sign at a rest area indicates:",
+    "choices": [
+      "Construction",
+      "Motorist services and information",
+      "No trucks",
+      "Hospital zone"
+    ],
+    "answer_index": 1,
+    "explanation": "Blue signs point to services like food, fuel, and lodging.",
+    "category": "road signs",
+    "difficulty": "easy"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "Two solid yellow lines in the center of a two-lane road mean:",
+    "choices": [
+      "Passing allowed both ways",
+      "Passing is not allowed in either direction",
+      "Passing allowed only at night",
+      "Center lane for turning only"
+    ],
+    "answer_index": 1,
+    "explanation": "Double solid yellow lines prohibit passing from either direction.",
+    "category": "road signs",
+    "difficulty": "easy"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "A broken yellow line on your side means:",
+    "choices": [
+      "You may pass when safe",
+      "No passing ever",
+      "Stop required",
+      "Two-way left turn lane"
+    ],
+    "answer_index": 0,
+    "explanation": "A broken yellow line on your side permits passing when safe.",
+    "category": "road signs",
+    "difficulty": "easy"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "A white curb painted red means:",
+    "choices": [
+      "Loading zone only",
+      "No stopping, standing, or parking",
+      "Passenger pickup only",
+      "Electric vehicle charging"
+    ],
+    "answer_index": 1,
+    "explanation": "Red curbs prohibit stopping except for buses in marked zones.",
+    "category": "road signs",
+    "difficulty": "easy"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "A sign showing a curved arrow with a speed number advises:",
+    "choices": [
+      "Minimum speed in a curve",
+      "Recommended safe speed for the curve",
+      "Maximum legal speed always",
+      "Truck route only"
+    ],
+    "answer_index": 1,
+    "explanation": "Advisory speed signs suggest a safe speed for the curve.",
+    "category": "road signs",
+    "difficulty": "easy"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "A triangular sign pointing down means:",
+    "choices": [
+      "Yield",
+      "Stop",
+      "Merge",
+      "Detour"
+    ],
+    "answer_index": 0,
+    "explanation": "An inverted triangle is a yield sign.",
+    "category": "road signs",
+    "difficulty": "easy"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "A flashing yellow arrow for a left turn means:",
+    "choices": [
+      "Protected turn; oncoming traffic stopped",
+      "Turn allowed after yielding to oncoming traffic and pedestrians",
+      "Left turn prohibited",
+      "Stop and wait for green arrow"
+    ],
+    "answer_index": 1,
+    "explanation": "You may turn left but must yield to oncoming traffic and pedestrians.",
+    "category": "road signs",
+    "difficulty": "easy"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "A sign with a bicycle symbol marks:",
+    "choices": [
+      "Bicycles prohibited",
+      "Bicycle lane or route",
+      "Bike shop nearby",
+      "No pedestrians"
+    ],
+    "answer_index": 1,
+    "explanation": "Bicycle symbols mark lanes or shared routes for cyclists.",
+    "category": "road signs",
+    "difficulty": "easy"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "A pedestrian symbol on a yellow sign warns:",
+    "choices": [
+      "Pedestrians prohibited",
+      "Pedestrian crossing or area ahead",
+      "No sidewalk",
+      "School bus stop only"
+    ],
+    "answer_index": 1,
+    "explanation": "These signs alert drivers to watch for people walking.",
+    "category": "road signs",
+    "difficulty": "easy"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "A winding road symbol warns that:",
+    "choices": [
+      "The road is closed",
+      "The road has curves ahead",
+      "Trucks only",
+      "Steep grade ahead"
+    ],
+    "answer_index": 1,
+    "explanation": "The winding road symbol warns of multiple curves ahead.",
+    "category": "road signs",
+    "difficulty": "easy"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "A flagger in a work zone means you must:",
+    "choices": [
+      "Ignore temporary signs",
+      "Follow the flagger instructions",
+      "Speed up to clear the zone",
+      "Use the shoulder"
+    ],
+    "answer_index": 1,
+    "explanation": "Flaggers control traffic and their directions must be obeyed.",
+    "category": "road signs",
+    "difficulty": "easy"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "At a four-way stop, who goes first?",
+    "choices": [
+      "The largest vehicle",
+      "The driver who arrived first",
+      "The driver on the left",
+      "Whoever honks first"
+    ],
+    "answer_index": 1,
+    "explanation": "At four-way stops, the first vehicle to stop generally proceeds first.",
+    "category": "right of way",
+    "difficulty": "medium"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "When two vehicles arrive at a four-way stop at the same time, who yields?",
+    "choices": [
+      "The driver on the right goes first",
+      "The driver on the left goes first",
+      "The faster vehicle",
+      "The truck always goes"
+    ],
+    "answer_index": 0,
+    "explanation": "When arriving together, yield to the driver on your right.",
+    "category": "right of way",
+    "difficulty": "medium"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "At an uncontrolled intersection, you should:",
+    "choices": [
+      "Assume you have the right of way",
+      "Slow down and be ready to yield if needed",
+      "Honk and proceed",
+      "Stop only if a sign is present"
+    ],
+    "answer_index": 1,
+    "explanation": "Slow down and yield to avoid collisions when no signs or signals control the intersection.",
+    "category": "right of way",
+    "difficulty": "medium"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "When entering a roundabout, you must yield to:",
+    "choices": [
+      "Traffic exiting the roundabout",
+      "Traffic already in the roundabout",
+      "Pedestrians only after you enter",
+      "No one"
+    ],
+    "answer_index": 1,
+    "explanation": "Entering traffic must yield to vehicles already circulating.",
+    "category": "right of way",
+    "difficulty": "medium"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "A pedestrian in a marked crosswalk has:",
+    "choices": [
+      "No special right of way",
+      "The right of way",
+      "Right of way only at night",
+      "Right of way only with a green light"
+    ],
+    "answer_index": 1,
+    "explanation": "Drivers must yield to pedestrians in crosswalks.",
+    "category": "right of way",
+    "difficulty": "medium"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "When turning left at a green light without an arrow, you must:",
+    "choices": [
+      "Turn immediately",
+      "Yield to oncoming traffic and pedestrians",
+      "Wait for a green arrow only",
+      "Honk and turn"
+    ],
+    "answer_index": 1,
+    "explanation": "Left turns on solid green require yielding to oncoming traffic and pedestrians.",
+    "category": "right of way",
+    "difficulty": "medium"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "At a T-intersection without signs, who must yield?",
+    "choices": [
+      "The driver on the continuing road",
+      "The driver on the road that ends",
+      "The slower vehicle",
+      "Neither driver"
+    ],
+    "answer_index": 1,
+    "explanation": "The driver on the road that ends must yield to through traffic.",
+    "category": "right of way",
+    "difficulty": "medium"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "When a funeral procession is led by an escort with flashing lights, you should:",
+    "choices": [
+      "Cut into the procession",
+      "Yield and not interrupt the procession",
+      "Pass on the right shoulder",
+      "Honk to warn them"
+    ],
+    "answer_index": 1,
+    "explanation": "Do not break into or interrupt a funeral procession.",
+    "category": "right of way",
+    "difficulty": "medium"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "When merging onto a freeway, who has the right of way?",
+    "choices": [
+      "The merging driver",
+      "Traffic already on the freeway",
+      "The slower vehicle",
+      "Trucks only"
+    ],
+    "answer_index": 1,
+    "explanation": "Drivers on the freeway have the right of way; merge when safe.",
+    "category": "right of way",
+    "difficulty": "medium"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "When a school bus has red lights flashing on a two-lane road, you must:",
+    "choices": [
+      "Pass slowly",
+      "Stop until the lights stop flashing",
+      "Pass if no children visible",
+      "Honk and proceed"
+    ],
+    "answer_index": 1,
+    "explanation": "You must stop for flashing red school bus lights on undivided roads.",
+    "category": "right of way",
+    "difficulty": "medium"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "When emergency vehicles approach with sirens and lights, you should:",
+    "choices": [
+      "Speed up",
+      "Pull to the right edge and stop if safe",
+      "Stop in the intersection",
+      "Follow closely behind"
+    ],
+    "answer_index": 1,
+    "explanation": "Pull right and stop to clear a path for emergency vehicles.",
+    "category": "right of way",
+    "difficulty": "medium"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "At a yield sign, you must:",
+    "choices": [
+      "Stop always for three seconds",
+      "Slow or stop as needed and give right of way",
+      "Maintain speed",
+      "Turn without looking"
+    ],
+    "answer_index": 1,
+    "explanation": "Yield means give right of way; stop if needed.",
+    "category": "right of way",
+    "difficulty": "medium"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "If traffic signals are blacked out and not working, treat the intersection as:",
+    "choices": [
+      "Green light for main road",
+      "A four-way stop",
+      "Free-for-all",
+      "Yield only for left turns"
+    ],
+    "answer_index": 1,
+    "explanation": "A dark signal should be treated as an all-way stop.",
+    "category": "right of way",
+    "difficulty": "medium"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "When exiting a driveway onto a street, you must yield to:",
+    "choices": [
+      "Only pedestrians",
+      "Pedestrians and vehicles on the roadway",
+      "No one if you signal",
+      "Vehicles behind you only"
+    ],
+    "answer_index": 1,
+    "explanation": "Entering traffic must yield to pedestrians and road users.",
+    "category": "right of way",
+    "difficulty": "medium"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "If you reach an intersection with a non-functioning signal at the same time as another car, you should:",
+    "choices": [
+      "Proceed quickly",
+      "Treat it as a four-way stop and take turns safely",
+      "Honk to claim right of way",
+      "Turn left first always"
+    ],
+    "answer_index": 1,
+    "explanation": "Use caution and follow four-way stop rules when signals fail.",
+    "category": "right of way",
+    "difficulty": "medium"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "A steady red light means:",
+    "choices": [
+      "Slow down",
+      "Stop and remain stopped until the light turns green",
+      "Proceed with caution",
+      "Yield only to the right"
+    ],
+    "answer_index": 1,
+    "explanation": "Stop at the limit line or crosswalk and wait for green.",
+    "category": "traffic signals",
+    "difficulty": "easy"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "A steady yellow light means:",
+    "choices": [
+      "Speed up",
+      "The light is about to turn red; stop if you can do so safely",
+      "Go immediately",
+      "Stop only at night"
+    ],
+    "answer_index": 1,
+    "explanation": "Yellow warns the signal is changing; stop safely if possible.",
+    "category": "traffic signals",
+    "difficulty": "easy"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "A flashing red light means:",
+    "choices": [
+      "Proceed without stopping",
+      "Stop, then go when safe",
+      "Yield only",
+      "Green light coming"
+    ],
+    "answer_index": 1,
+    "explanation": "Treat a flashing red like a stop sign.",
+    "category": "traffic signals",
+    "difficulty": "easy"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "A flashing yellow light means:",
+    "choices": [
+      "Stop",
+      "Slow down and proceed with caution",
+      "Road closed",
+      "No right turn"
+    ],
+    "answer_index": 1,
+    "explanation": "Flashing yellow warns drivers to proceed carefully.",
+    "category": "traffic signals",
+    "difficulty": "easy"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "A green arrow pointing left allows you to:",
+    "choices": [
+      "Turn left with a protected movement if no sign prohibits",
+      "Turn left without yielding",
+      "Go straight only",
+      "Park in the intersection"
+    ],
+    "answer_index": 0,
+    "explanation": "A green arrow gives a protected turn in that direction.",
+    "category": "traffic signals",
+    "difficulty": "easy"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "A red arrow pointing left means:",
+    "choices": [
+      "Turn left after yielding",
+      "Do not turn left until the arrow changes",
+      "Stop only if pedestrians present",
+      "Merge left"
+    ],
+    "answer_index": 1,
+    "explanation": "You may not turn in the direction of a red arrow.",
+    "category": "traffic signals",
+    "difficulty": "easy"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "If the light turns yellow as you approach, you should:",
+    "choices": [
+      "Accelerate to beat the red",
+      "Stop if you can do so safely",
+      "Ignore it",
+      "Honk"
+    ],
+    "answer_index": 1,
+    "explanation": "Do not speed up for yellow; stop safely when possible.",
+    "category": "traffic signals",
+    "difficulty": "easy"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "At a red light, a right turn is allowed when:",
+    "choices": [
+      "Never",
+      "After stopping and yielding unless a sign prohibits it",
+      "Without stopping if clear",
+      "Only with a green arrow"
+    ],
+    "answer_index": 1,
+    "explanation": "Right on red is allowed after a full stop and yielding unless posted otherwise.",
+    "category": "traffic signals",
+    "difficulty": "easy"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "Pedestrian countdown numbers show:",
+    "choices": [
+      "Speed limit",
+      "Seconds left to cross for pedestrians",
+      "Parking time limit",
+      "Bus schedule"
+    ],
+    "answer_index": 1,
+    "explanation": "Countdowns tell pedestrians how much crossing time remains.",
+    "category": "traffic signals",
+    "difficulty": "easy"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "If a traffic signal is green but traffic is blocking the intersection, you should:",
+    "choices": [
+      "Enter and wait in the intersection",
+      "Wait until you can clear the intersection completely",
+      "Honk",
+      "Use the shoulder"
+    ],
+    "answer_index": 1,
+    "explanation": "Do not block the box; wait until you can clear the intersection.",
+    "category": "traffic signals",
+    "difficulty": "easy"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "Before changing lanes, you should:",
+    "choices": [
+      "Signal and check mirrors and blind spots",
+      "Signal only on freeways",
+      "Change quickly without signaling",
+      "Honk continuously"
+    ],
+    "answer_index": 0,
+    "explanation": "Signal early and check mirrors and blind spots before moving.",
+    "category": "lane changes and turning",
+    "difficulty": "medium"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "When turning right, you should usually turn from:",
+    "choices": [
+      "The lane closest to the right curb",
+      "Any open lane",
+      "The center lane",
+      "The shoulder"
+    ],
+    "answer_index": 0,
+    "explanation": "Right turns are normally made from the rightmost lane.",
+    "category": "lane changes and turning",
+    "difficulty": "medium"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "When turning left from a two-way street onto a two-way street, start from:",
+    "choices": [
+      "The far right lane",
+      "The lane closest to the center line or marked left-turn lane",
+      "The shoulder",
+      "Any lane"
+    ],
+    "answer_index": 1,
+    "explanation": "Begin left turns from the lane nearest the center or a marked turn lane.",
+    "category": "lane changes and turning",
+    "difficulty": "medium"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "A U-turn in a business district is:",
+    "choices": [
+      "Always legal",
+      "Legal only at intersections or openings unless prohibited",
+      "Always illegal",
+      "Legal anywhere at night"
+    ],
+    "answer_index": 1,
+    "explanation": "In business districts, U-turns are limited to intersections or openings unless posted.",
+    "category": "lane changes and turning",
+    "difficulty": "medium"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "You must signal at least how long before a turn in California?",
+    "choices": [
+      "50 feet",
+      "100 feet",
+      "200 feet",
+      "500 feet"
+    ],
+    "answer_index": 1,
+    "explanation": "California law requires signaling at least 100 feet before turning.",
+    "category": "lane changes and turning",
+    "difficulty": "medium"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "When passing a bicyclist, California law generally requires:",
+    "choices": [
+      "Honk continuously",
+      "At least three feet of space when passing",
+      "Pass in the same lane at any speed",
+      "Flash high beams"
+    ],
+    "answer_index": 1,
+    "explanation": "Give at least three feet of clearance when passing a bicyclist.",
+    "category": "lane changes and turning",
+    "difficulty": "medium"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "If your lane ends and you must merge, you should:",
+    "choices": [
+      "Stop in the lane",
+      "Match speed, signal, and merge when safe",
+      "Force other drivers to slow",
+      "Use the median"
+    ],
+    "answer_index": 1,
+    "explanation": "Adjust speed and merge smoothly when a lane ends.",
+    "category": "lane changes and turning",
+    "difficulty": "medium"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "When making a legal U-turn, you must yield to:",
+    "choices": [
+      "No one",
+      "All approaching traffic and pedestrians",
+      "Only trucks",
+      "Only vehicles behind you"
+    ],
+    "answer_index": 1,
+    "explanation": "Yield to all traffic and pedestrians before completing a U-turn.",
+    "category": "lane changes and turning",
+    "difficulty": "medium"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "Hand signals are required if:",
+    "choices": [
+      "You are on a freeway",
+      "Your turn signals are not working",
+      "It is raining",
+      "You are parking"
+    ],
+    "answer_index": 1,
+    "explanation": "Use hand signals if electronic signals fail.",
+    "category": "lane changes and turning",
+    "difficulty": "medium"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "When turning across a bike lane before a right turn, you should:",
+    "choices": [
+      "Merge into the bike lane when safe before turning",
+      "Turn across without looking",
+      "Stop in the travel lane",
+      "Honk at cyclists"
+    ],
+    "answer_index": 0,
+    "explanation": "Enter the bike lane within 200 feet of the turn when safe.",
+    "category": "lane changes and turning",
+    "difficulty": "medium"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "When parking downhill with a curb, turn your front wheels:",
+    "choices": [
+      "Toward the curb",
+      "Away from the curb",
+      "Straight ahead",
+      "Toward the street"
+    ],
+    "answer_index": 0,
+    "explanation": "Turn wheels toward the curb so the vehicle rolls into the curb if it moves.",
+    "category": "parking",
+    "difficulty": "medium"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "When parking uphill with a curb, turn your front wheels:",
+    "choices": [
+      "Toward the curb",
+      "Away from the curb (toward the street)",
+      "Straight",
+      "Left only"
+    ],
+    "answer_index": 1,
+    "explanation": "Turn wheels away from the curb so the vehicle rolls into the curb if it rolls back.",
+    "category": "parking",
+    "difficulty": "medium"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "A blue curb means:",
+    "choices": [
+      "Loading zone",
+      "Parking for disabled persons with a valid placard",
+      "No parking",
+      "Taxi only"
+    ],
+    "answer_index": 1,
+    "explanation": "Blue curbs are for disabled parking with proper placards or plates.",
+    "category": "parking",
+    "difficulty": "medium"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "A green curb means:",
+    "choices": [
+      "No stopping",
+      "Limited-time parking as posted",
+      "Bus zone",
+      "Fire lane"
+    ],
+    "answer_index": 1,
+    "explanation": "Green curbs allow short-term parking for the posted time.",
+    "category": "parking",
+    "difficulty": "medium"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "You may not park within how many feet of a fire hydrant?",
+    "choices": [
+      "5 feet",
+      "10 feet",
+      "15 feet",
+      "20 feet"
+    ],
+    "answer_index": 2,
+    "explanation": "Do not park within 15 feet of a fire hydrant.",
+    "category": "parking",
+    "difficulty": "medium"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "You may not park within how many feet of a crosswalk at an intersection?",
+    "choices": [
+      "10 feet",
+      "15 feet",
+      "20 feet",
+      "25 feet"
+    ],
+    "answer_index": 2,
+    "explanation": "Stay far enough from crosswalks so pedestrians remain visible.",
+    "category": "parking",
+    "difficulty": "medium"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "Double parking means:",
+    "choices": [
+      "Parking between two spaces",
+      "Parking on the roadway beside a parked vehicle",
+      "Parking in a garage",
+      "Parking at a meter"
+    ],
+    "answer_index": 1,
+    "explanation": "Double parking blocks traffic and is illegal.",
+    "category": "parking",
+    "difficulty": "medium"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "When parallel parking, your wheels should be within how many inches of the curb?",
+    "choices": [
+      "6 inches",
+      "18 inches",
+      "36 inches",
+      "Any distance"
+    ],
+    "answer_index": 1,
+    "explanation": "Wheels should generally be within 18 inches of the curb.",
+    "category": "parking",
+    "difficulty": "medium"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "You must not leave a child under what age alone in a vehicle if unsafe?",
+    "choices": [
+      "6 years",
+      "8 years",
+      "10 years",
+      "12 years"
+    ],
+    "answer_index": 1,
+    "explanation": "Leaving young children unattended in vehicles can be dangerous and illegal.",
+    "category": "parking",
+    "difficulty": "medium"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "Parking in a space marked for disabled persons without a placard is:",
+    "choices": [
+      "Allowed at night",
+      "Illegal",
+      "Allowed for five minutes",
+      "Allowed with hazards on"
+    ],
+    "answer_index": 1,
+    "explanation": "Disabled spaces require proper placards or plates.",
+    "category": "parking",
+    "difficulty": "medium"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "California default speed limit in a residential or business district unless posted is:",
+    "choices": [
+      "15 mph",
+      "25 mph",
+      "35 mph",
+      "45 mph"
+    ],
+    "answer_index": 1,
+    "explanation": "The default limit is 25 mph unless otherwise posted.",
+    "category": "speed limits",
+    "difficulty": "easy"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "Unless posted otherwise, the speed limit in a school zone when children are present is:",
+    "choices": [
+      "15 mph",
+      "25 mph",
+      "35 mph",
+      "45 mph"
+    ],
+    "answer_index": 1,
+    "explanation": "School zones are commonly 25 mph when children are present.",
+    "category": "speed limits",
+    "difficulty": "easy"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "On most California freeways, the maximum speed limit unless posted is:",
+    "choices": [
+      "55 mph",
+      "65 mph",
+      "75 mph",
+      "85 mph"
+    ],
+    "answer_index": 1,
+    "explanation": "Many freeways have a 65 mph limit unless posted otherwise.",
+    "category": "speed limits",
+    "difficulty": "easy"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "When driving in fog, you should:",
+    "choices": [
+      "Use high beams",
+      "Slow down and use low-beam headlights",
+      "Drive the posted limit",
+      "Follow closely"
+    ],
+    "answer_index": 1,
+    "explanation": "Low beams reduce glare; slow down in fog.",
+    "category": "speed limits",
+    "difficulty": "easy"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "The Basic Speed Law means you must never drive faster than is:",
+    "choices": [
+      "Posted on the sign only",
+      "Reasonable for current conditions",
+      "What other drivers are doing",
+      "50 mph"
+    ],
+    "answer_index": 1,
+    "explanation": "You must drive at a speed reasonable for conditions even if under the posted limit.",
+    "category": "speed limits",
+    "difficulty": "easy"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "When towing a trailer, you should usually:",
+    "choices": [
+      "Drive faster to reduce delay",
+      "Drive slower and allow more following distance",
+      "Use high beams always",
+      "Pass frequently"
+    ],
+    "answer_index": 1,
+    "explanation": "Heavier loads need slower speeds and more space.",
+    "category": "speed limits",
+    "difficulty": "easy"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "Speed limits in highway construction zones when workers are present:",
+    "choices": [
+      "Never change",
+      "May be reduced and must be obeyed",
+      "Are suggestions only",
+      "Apply only to trucks"
+    ],
+    "answer_index": 1,
+    "explanation": "Reduced limits in work zones protect workers and must be followed.",
+    "category": "speed limits",
+    "difficulty": "easy"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "If you are driving 65 mph in rain on a crowded freeway, you are likely:",
+    "choices": [
+      "Following the Basic Speed Law",
+      "Driving too fast for conditions",
+      "Driving too slow",
+      "Exempt from limits"
+    ],
+    "answer_index": 1,
+    "explanation": "Rain reduces traction; slower speeds are often required.",
+    "category": "speed limits",
+    "difficulty": "easy"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "When approaching a blind curve, you should:",
+    "choices": [
+      "Maintain speed in your lane",
+      "Slow down and keep right",
+      "Cross the center line",
+      "Stop in the lane"
+    ],
+    "answer_index": 1,
+    "explanation": "Slow down and stay right to avoid oncoming traffic you cannot see.",
+    "category": "speed limits",
+    "difficulty": "easy"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "Driving well below the speed limit in normal traffic can be:",
+    "choices": [
+      "Always safest",
+      "Dangerous and impede traffic flow",
+      "Required",
+      "Illegal only on freeways"
+    ],
+    "answer_index": 1,
+    "explanation": "Driving too slowly can block traffic and increase risk.",
+    "category": "speed limits",
+    "difficulty": "easy"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "Near a school when children are outside, you should:",
+    "choices": [
+      "Maintain normal speed",
+      "Slow down and watch for children",
+      "Honk often",
+      "Use high beams"
+    ],
+    "answer_index": 1,
+    "explanation": "Expect unpredictable child movements near schools.",
+    "category": "school zones",
+    "difficulty": "easy"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "A crossing guard showing a stop sign means you must:",
+    "choices": [
+      "Slow down",
+      "Stop and remain stopped until directed to proceed",
+      "Go around quickly",
+      "Only stop if children are in your lane"
+    ],
+    "answer_index": 1,
+    "explanation": "Obey crossing guards like traffic control officers.",
+    "category": "school zones",
+    "difficulty": "easy"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "School zone signs often use which color for visibility?",
+    "choices": [
+      "Orange",
+      "Fluorescent yellow-green",
+      "Blue",
+      "Brown"
+    ],
+    "answer_index": 1,
+    "explanation": "Fluorescent yellow-green improves visibility for school warnings.",
+    "category": "school zones",
+    "difficulty": "easy"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "When a school bus stops on your side of an undivided road with flashing red lights, you:",
+    "choices": [
+      "May pass at 10 mph",
+      "Must stop until the lights stop flashing",
+      "May pass if no kids visible",
+      "Must honk"
+    ],
+    "answer_index": 1,
+    "explanation": "On your side of the road, stop for the bus red lights.",
+    "category": "school zones",
+    "difficulty": "easy"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "Children are most at risk when:",
+    "choices": [
+      "On sidewalks only",
+      "Entering or leaving school buses and crossing streets",
+      "Inside classrooms",
+      "On freeways"
+    ],
+    "answer_index": 1,
+    "explanation": "Loading and unloading zones require extra driver caution.",
+    "category": "school zones",
+    "difficulty": "easy"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "When you see a stationary emergency vehicle with flashing lights on a freeway, you should:",
+    "choices": [
+      "Maintain speed",
+      "Move over a lane away if safe, or slow down",
+      "Stop immediately in your lane",
+      "Take photos"
+    ],
+    "answer_index": 1,
+    "explanation": "Move over or slow down for stopped emergency vehicles (Move Over law).",
+    "category": "emergency vehicles",
+    "difficulty": "medium"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "If an emergency vehicle approaches from behind with lights and siren, you should:",
+    "choices": [
+      "Stop in the intersection",
+      "Pull to the right and stop when safe",
+      "Speed up",
+      "Turn left quickly"
+    ],
+    "answer_index": 1,
+    "explanation": "Pull right and stop to let emergency vehicles pass.",
+    "category": "emergency vehicles",
+    "difficulty": "medium"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "It is illegal to follow an emergency vehicle responding to a call within:",
+    "choices": [
+      "100 feet",
+      "300 feet",
+      "500 feet",
+      "1000 feet"
+    ],
+    "answer_index": 2,
+    "explanation": "Do not follow within 500 feet of responding emergency vehicles.",
+    "category": "emergency vehicles",
+    "difficulty": "medium"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "If you are in an intersection when an emergency vehicle approaches, you should:",
+    "choices": [
+      "Stop in the intersection",
+      "Clear the intersection, then pull over",
+      "Back up",
+      "Turn off your lights"
+    ],
+    "answer_index": 1,
+    "explanation": "Clear the intersection first, then pull over safely.",
+    "category": "emergency vehicles",
+    "difficulty": "medium"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "You must not drive over fire hoses unless:",
+    "choices": [
+      "You are late",
+      "Authorized by a fire official",
+      "Traffic is heavy",
+      "You have four-wheel drive"
+    ],
+    "answer_index": 1,
+    "explanation": "Only cross fire hoses when authorized by fire personnel.",
+    "category": "emergency vehicles",
+    "difficulty": "medium"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "For drivers under 21 in California, any measurable alcohol in the blood is:",
+    "choices": [
+      "Allowed up to 0.05%",
+      "Illegal (zero tolerance)",
+      "Allowed with parental consent",
+      "Allowed on highways only"
+    ],
+    "answer_index": 1,
+    "explanation": "Drivers under 21 may not drive with any measurable alcohol.",
+    "category": "alcohol/DUI",
+    "difficulty": "hard"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "The legal BAC limit for drivers 21 and older is generally:",
+    "choices": [
+      "0.02%",
+      "0.08%",
+      "0.10%",
+      "0.15%"
+    ],
+    "answer_index": 1,
+    "explanation": "0.08% BAC is the general legal limit for adults 21 and over.",
+    "category": "alcohol/DUI",
+    "difficulty": "hard"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "Implied consent means if you are arrested for DUI you must:",
+    "choices": [
+      "Pay a fine on the spot",
+      "Submit to a chemical test of your blood or breath",
+      "Surrender your vehicle permanently",
+      "Take a road test"
+    ],
+    "answer_index": 1,
+    "explanation": "Licensed drivers agree to chemical testing when lawfully arrested for DUI.",
+    "category": "alcohol/DUI",
+    "difficulty": "hard"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "A DUI conviction can result in:",
+    "choices": [
+      "License suspension and fines",
+      "Only a warning",
+      "No insurance change",
+      "Automatic expungement"
+    ],
+    "answer_index": 0,
+    "explanation": "DUI can lead to suspension, fines, and other penalties.",
+    "category": "alcohol/DUI",
+    "difficulty": "hard"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "The best way to avoid DUI is to:",
+    "choices": [
+      "Drink coffee after alcohol",
+      "Plan a sober ride before drinking",
+      "Drive slowly",
+      "Open windows while driving"
+    ],
+    "answer_index": 1,
+    "explanation": "Plan ahead with a sober driver or ride service.",
+    "category": "alcohol/DUI",
+    "difficulty": "hard"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "The three-second rule helps you maintain:",
+    "choices": [
+      "Speed",
+      "A safe following distance",
+      "Lane position",
+      "Fuel economy"
+    ],
+    "answer_index": 1,
+    "explanation": "Pick a fixed point; when the car ahead passes it, you should reach it in at least three seconds.",
+    "category": "defensive driving",
+    "difficulty": "medium"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "If another driver is tailgating you, you should:",
+    "choices": [
+      "Brake suddenly",
+      "Increase following distance ahead and change lanes when safe",
+      "Speed up sharply",
+      "Block them"
+    ],
+    "answer_index": 1,
+    "explanation": "Increase space ahead so you can brake gradually if needed.",
+    "category": "defensive driving",
+    "difficulty": "medium"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "When you feel drowsy while driving, you should:",
+    "choices": [
+      "Open windows and keep driving",
+      "Pull off in a safe place and rest",
+      "Drink only soda",
+      "Speed up to arrive faster"
+    ],
+    "answer_index": 1,
+    "explanation": "Rest is the safest response to drowsy driving.",
+    "category": "defensive driving",
+    "difficulty": "medium"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "Hydroplaning is best handled by:",
+    "choices": [
+      "Braking hard",
+      "Easing off the gas and steering straight until traction returns",
+      "Accelerating",
+      "Turning sharply"
+    ],
+    "answer_index": 1,
+    "explanation": "Ease off the accelerator and steer straight until you regain control.",
+    "category": "defensive driving",
+    "difficulty": "medium"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "If your vehicle starts to skid, you should:",
+    "choices": [
+      "Steer in the direction you want to go and avoid sudden braking",
+      "Brake hard immediately",
+      "Accelerate",
+      "Close your eyes briefly"
+    ],
+    "answer_index": 0,
+    "explanation": "Steer smoothly toward your intended path and avoid abrupt inputs.",
+    "category": "defensive driving",
+    "difficulty": "medium"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "Scanning the road 10 to 15 seconds ahead helps you:",
+    "choices": [
+      "Use your phone safely",
+      "See hazards early",
+      "Speed in traffic",
+      "Ignore mirrors"
+    ],
+    "answer_index": 1,
+    "explanation": "Looking far ahead gives time to react to hazards.",
+    "category": "defensive driving",
+    "difficulty": "medium"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "Large trucks have bigger blind spots called:",
+    "choices": [
+      "Safety zones",
+      "No-zones",
+      "Free zones",
+      "Pass zones"
+    ],
+    "answer_index": 1,
+    "explanation": "Stay out of truck no-zones where the driver cannot see you.",
+    "category": "defensive driving",
+    "difficulty": "medium"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "At night, you should dim high beams within how many feet of an oncoming vehicle?",
+    "choices": [
+      "200 feet",
+      "500 feet",
+      "1000 feet",
+      "1500 feet"
+    ],
+    "answer_index": 1,
+    "explanation": "Dim high beams within 500 feet of oncoming traffic.",
+    "category": "defensive driving",
+    "difficulty": "medium"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "If your right wheels drop off the pavement, you should:",
+    "choices": [
+      "Jerk the wheel back quickly",
+      "Grip the wheel, ease off the gas, and return when safe",
+      "Brake hard",
+      "Accelerate back"
+    ],
+    "answer_index": 1,
+    "explanation": "Ease off the gas and re-enter gradually when safe.",
+    "category": "defensive driving",
+    "difficulty": "medium"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "Defensive driving means:",
+    "choices": [
+      "Assuming other drivers will always yield",
+      "Anticipating hazards and driving to prevent collisions",
+      "Driving the speed limit always",
+      "Using hazard lights often"
+    ],
+    "answer_index": 1,
+    "explanation": "Defensive driving focuses on preventing crashes before they happen.",
+    "category": "defensive driving",
+    "difficulty": "medium"
+  }
+]

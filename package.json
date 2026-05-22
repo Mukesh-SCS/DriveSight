@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "extract-signs": "python scripts/extract-road-signs.py"
+    "extract-signs": "python scripts/extract-road-signs.py",
+    "seed:california": "python scripts/generate-california-seed.py"
   },
   "dependencies": {
     "@supabase/ssr": "^0.10.3",
