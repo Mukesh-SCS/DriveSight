@@ -28,6 +28,9 @@ export function PracticeTest({ questions, stateName }: PracticeTestProps) {
     setSubmitted(false);
   }
 
+  const answeredCount = Object.keys(answers).length;
+  const progressPercent = Math.round((answeredCount / questions.length) * 100);
+
   return (
     <form className="practice-test" onSubmit={handleSubmit}>
       <div className="test-toolbar">
@@ -39,6 +42,23 @@ export function PracticeTest({ questions, stateName }: PracticeTestProps) {
           {submitted ? `${score}/${questions.length}` : `${questions.length} questions`}
         </div>
       </div>
+
+      {!submitted ? (
+        <div className="test-progress" aria-label="Test progress">
+          <div className="test-progress-label">
+            <span>Progress</span>
+            <strong>
+              {answeredCount}/{questions.length}
+            </strong>
+          </div>
+          <div className="test-progress-track">
+            <div
+              className="test-progress-fill"
+              style={{ width: `${progressPercent}%` }}
+            />
+          </div>
+        </div>
+      ) : null}
 
       <div className="question-stack">
         {questions.map((question, questionIndex) => (
