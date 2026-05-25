@@ -1,8 +1,9 @@
 "use client";
 
-import { FormEvent, useCallback, useMemo, useState } from "react";
-import { createClient } from "@/utils/supabase/client";
+import { FormEvent, useMemo, useState } from "react";
+import { recordPracticeSession } from "@/app/practice/actions";
 import type { DrivingQuestion } from "@/lib/states";
+import { adaptiveTierLabel, type AdaptiveTier } from "@/lib/progress";
 import {
   buildReviewSummary,
   difficultyLabel,
@@ -13,7 +14,11 @@ import {
 
 type PracticeTestProps = {
   questions: DrivingQuestion[];
+  stateCode: string;
   stateName: string;
+  adaptiveTier?: AdaptiveTier;
+  /** Total active questions available for this state (before session limit). */
+  totalInBank?: number;
 };
 
 type TestMode = "full" | "wrong-only";
@@ -34,7 +39,13 @@ function getQuestionStatus(
   return selected === question.displayAnswerIndex ? "correct" : "wrong";
 }
 
-export function PracticeTest({ questions, stateName }: PracticeTestProps) {
+export function PracticeTest({
+  questions,
+  stateCode,
+  stateName,
+  adaptiveTier = "easy",
+  totalInBank,
+}: PracticeTestProps) {
   const [answers, setAnswers] = useState<Record<string, number>>({});
   const [submitted, setSubmitted] = useState(false);
   const [testMode, setTestMode] = useState<TestMode>("full");
@@ -74,40 +85,8 @@ export function PracticeTest({ questions, stateName }: PracticeTestProps) {
       ? 0
       : Math.round((answeredCount / preparedQuestions.length) * 100);
 
-  const recordAttempts = useCallback(async () => {
-    try {
-      const supabase = createClient();
-      const {
-        data: { user },
-      } = await supabase.auth.getUser();
-
-      if (!user) {
-        return;
-      }
-
-      const rows = preparedQuestions
-        .map((question) => {
-          const selected = answers[question.id];
-          if (selected === undefined) {
-            return null;
-          }
-
-          return {
-            user_id: user.id,
-            question_id: question.id,
-            selected_answer_index: selected,
-            is_correct: selected === question.displayAnswerIndex,
-          };
-        })
-        .filter((row): row is NonNullable<typeof row> => Boolean(row));
-
-      if (rows.length > 0) {
-        await supabase.from("user_question_attempts").insert(rows);
-      }
-    } catch {
-      // Attempt logging should not block the practice flow.
-    }
-  }, [answers, preparedQuestions]);
+  const bankTotal = totalInBank ?? questions.length;
+  const sessionTotal = preparedQuestions.length;
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -118,7 +97,24 @@ export function PracticeTest({ questions, stateName }: PracticeTestProps) {
       .map((question) => question.id);
 
     setWrongOnlyIds(missed);
-    await recordAttempts();
+
+    const attempts = preparedQuestions
+      .map((question) => {
+        const selected = answers[question.id];
+        if (selected === undefined) {
+          return null;
+        }
+
+        return {
+          questionId: question.id,
+          selectedAnswerIndex: selected,
+          isCorrect: selected === question.displayAnswerIndex,
+          category: question.category,
+        };
+      })
+      .filter((row): row is NonNullable<typeof row> => Boolean(row));
+
+    await recordPracticeSession(stateCode, attempts);
   }
 
   function startNewSession(mode: TestMode = "full") {
@@ -159,12 +155,20 @@ export function PracticeTest({ questions, stateName }: PracticeTestProps) {
           </h1>
           {testMode === "wrong-only" ? (
             <p className="test-mode-note">Practicing {preparedQuestions.length} questions you missed</p>
-          ) : null}
+          ) : (
+            <p className="test-mode-note">
+              Adaptive mode: {adaptiveTierLabel(adaptiveTier)} · {sessionTotal} questions
+              this session
+              {bankTotal > sessionTotal
+                ? ` (${bankTotal.toLocaleString()} in ${stateName} bank)`
+                : null}
+            </p>
+          )}
         </div>
         <div className="score-chip">
           {submitted
-            ? `${score}/${preparedQuestions.length}`
-            : `${preparedQuestions.length} questions`}
+            ? `${score}/${sessionTotal}`
+            : `${sessionTotal} question${sessionTotal === 1 ? "" : "s"}`}
         </div>
       </div>
 
@@ -173,7 +177,7 @@ export function PracticeTest({ questions, stateName }: PracticeTestProps) {
           <div className="test-progress-label">
             <span>Progress</span>
             <strong>
-              {answeredCount}/{preparedQuestions.length}
+              {answeredCount}/{sessionTotal}
             </strong>
           </div>
           <div className="test-progress-track">
@@ -224,7 +228,14 @@ export function PracticeTest({ questions, stateName }: PracticeTestProps) {
               key={question.id}
             >
               <legend>
-                <span className="question-number">{questionIndex + 1}</span>
+                <span className="question-heading">
+                  <span className="question-number" aria-hidden="true">
+                    {questionIndex + 1}
+                  </span>
+                  <span className="question-position">
+                    Question {questionIndex + 1} of {sessionTotal}
+                  </span>
+                </span>
                 <span className="question-prompt">{question.prompt}</span>
               </legend>
 
@@ -308,7 +319,7 @@ export function PracticeTest({ questions, stateName }: PracticeTestProps) {
         ) : (
           <button
             className="primary-button"
-            disabled={answeredCount !== preparedQuestions.length}
+            disabled={answeredCount !== sessionTotal}
             type="submit"
           >
             Check answers

@@ -2,8 +2,7 @@ import { cookies } from "next/headers";
 import Image from "next/image";
 import Link from "next/link";
 import { redirect } from "next/navigation";
-import { updatePassword } from "@/app/auth/actions";
-import { PasswordField } from "@/components/PasswordField";
+import { ResetPasswordForm } from "@/components/ResetPasswordForm";
 import logo from "@/app/assets/drivesights_logo.png";
 import { createClient } from "@/utils/supabase/server";
 
@@ -44,29 +43,7 @@ export default async function ResetPasswordPage({
 
         {message ? <p className="auth-message">{message}</p> : null}
 
-        <form className="auth-form">
-          <PasswordField
-            autoComplete="new-password"
-            label="New password"
-            name="password"
-            placeholder="At least 6 characters"
-            required
-          />
-
-          <PasswordField
-            autoComplete="new-password"
-            label="Confirm password"
-            name="confirmPassword"
-            placeholder="Re-enter your password"
-            required
-          />
-
-          <div className="auth-actions">
-            <button className="primary-button auth-submit" formAction={updatePassword} type="submit">
-              Update password
-            </button>
-          </div>
-        </form>
+        <ResetPasswordForm />
 
         <p className="auth-guest">
           <Link href="/">Back to dashboard</Link>

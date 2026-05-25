@@ -1,0 +1,212 @@
+[
+  {
+    "state_code": "AK",
+    "prompt": "When driving in Alaska during the winter months, what is the most effective way to recover if your vehicle begins to skid on an icy road?",
+    "choices": [
+      "Slam on the brakes to engage the ABS system immediately",
+      "Steer in the direction you want the front of the vehicle to go",
+      "Accelerate slightly to shift weight to the rear tires",
+      "Oversteer in the opposite direction of the skid"
+    ],
+    "answer_index": 1,
+    "explanation": "If your vehicle begins to skid on ice, take your foot off the gas and carefully steer in the direction you want the front of the vehicle to go. Avoid slamming on the brakes, which can lock the wheels and make the skid worse.",
+    "category": "weather_driving",
+    "difficulty": "medium"
+  },
+  {
+    "state_code": "AK",
+    "prompt": "Under Alaska law, studded snow tires are legally permitted on vehicles during which general timeframe?",
+    "choices": [
+      "Year-round for all vehicles",
+      "Mid-September through early May",
+      "Only during declared winter weather emergencies",
+      "November 1st through March 1st"
+    ],
+    "answer_index": 1,
+    "explanation": "Studded tires are legally allowed in Alaska from September 15th to May 1st (or May 15th for areas north of 60 degrees North Latitude) to prevent severe damage to paved roads during warmer months.",
+    "category": "weather_driving",
+    "difficulty": "hard"
+  },
+  {
+    "state_code": "AK",
+    "prompt": "You are driving on a rural Alaskan highway and spot a moose standing near the shoulder. What is the safest course of action?",
+    "choices": [
+      "Honk your horn continuously to scare it away",
+      "Maintain your speed and swerve into the oncoming lane to pass",
+      "Slow down significantly and be prepared to stop",
+      "Flash your high beams rapidly to blind the animal"
+    ],
+    "answer_index": 2,
+    "explanation": "Moose are unpredictable and top-heavy. Striking one can be fatal for the occupants of the vehicle. You should always slow down and prepare to stop if you see wildlife near the roadway.",
+    "category": "defensive_driving",
+    "difficulty": "easy"
+  },
+  {
+    "state_code": "AK",
+    "prompt": "Unless otherwise posted by road signs, what is the maximum statutory speed limit on Alaskan state highways?",
+    "choices": [
+      "45 mph",
+      "55 mph",
+      "65 mph",
+      "75 mph"
+    ],
+    "answer_index": 1,
+    "explanation": "The maximum speed limit on state highways in Alaska is 55 mph unless signs specifically indicate a higher speed limit, such as 65 mph on certain interstates.",
+    "category": "speed_limits",
+    "difficulty": "medium"
+  },
+  {
+    "state_code": "AK",
+    "prompt": "Alaska's 'Implied Consent' law means that by operating a motor vehicle on public roads, you automatically agree to:",
+    "choices": [
+      "Allow police to search your vehicle without a warrant at any time",
+      "Submit to a chemical test for alcohol or drugs if lawfully arrested for DUI",
+      "Pay all traffic fines within 30 days of receiving a citation",
+      "Carry liability insurance for any passengers in your car"
+    ],
+    "answer_index": 1,
+    "explanation": "Implied consent means that if you are arrested for driving under the influence, you have already consented to take a breath or blood test to determine your blood alcohol concentration.",
+    "category": "dui_alcohol_laws",
+    "difficulty": "hard"
+  },
+  {
+    "state_code": "AK",
+    "prompt": "You are approaching a stopped school bus with its red lights flashing on an undivided two-lane road in Anchorage. What are you legally required to do?",
+    "choices": [
+      "Slow down to 15 mph and pass with caution",
+      "Stop only if children are actively crossing the street",
+      "Stop completely and wait until the red lights stop flashing",
+      "Honk your horn before pulling around the left side of the bus"
+    ],
+    "answer_index": 2,
+    "explanation": "On an undivided roadway, all traffic traveling in both directions must come to a complete stop for a school bus with flashing red lights and an extended stop arm.",
+    "category": "school_zones",
+    "difficulty": "easy"
+  },
+  {
+    "state_code": "AK",
+    "prompt": "In Alaska, the act of reading or typing a text message while operating a moving motor vehicle is considered:",
+    "choices": [
+      "A minor traffic infraction resulting in a warning",
+      "Legal as long as the phone is held below the steering wheel",
+      "A serious misdemeanor crime that carries strict penalties",
+      "Only illegal for drivers under the age of 21"
+    ],
+    "answer_index": 2,
+    "explanation": "Alaska has some of the strictest distracted driving laws in the country. Texting while driving is a misdemeanor offense, not just a traffic ticket, and carries severe fines.",
+    "category": "distracted_driving",
+    "difficulty": "medium"
+  },
+  {
+    "state_code": "AK",
+    "prompt": "An emergency vehicle with flashing lights and an active siren is approaching from behind on a two-lane road. You must:",
+    "choices": [
+      "Maintain your speed until you find a designated pull-out area",
+      "Pull over to the right edge of the roadway and stop completely",
+      "Move to the left lane to give them room to pass on the right",
+      "Accelerate to stay ahead of the emergency vehicle"
+    ],
+    "answer_index": 1,
+    "explanation": "When an emergency vehicle is approaching with lights and sirens, you must immediately yield the right-of-way by pulling as far to the right as possible and coming to a complete stop.",
+    "category": "emergency_vehicles",
+    "difficulty": "easy"
+  },
+  {
+    "state_code": "AK",
+    "prompt": "Alaska law requires drivers to turn on their vehicle's headlights during which specific times?",
+    "choices": [
+      "Only when driving on unpaved or gravel roads",
+      "From a half-hour after sunset to a half-hour before sunrise",
+      "Whenever the vehicle is traveling over 45 mph",
+      "Only between the hours of 10:00 PM and 4:00 AM"
+    ],
+    "answer_index": 1,
+    "explanation": "Headlights must be used from a half-hour after sunset until a half-hour before sunrise, or at any other time when visibility is limited and you cannot see clearly for 1,000 feet.",
+    "category": "weather_driving",
+    "difficulty": "medium"
+  },
+  {
+    "state_code": "AK",
+    "prompt": "When parking your vehicle facing uphill on a street with a defined physical curb, which way should you turn your front steering wheels?",
+    "choices": [
+      "Straight ahead to keep the steering column locked",
+      "Sharply toward the curb",
+      "Sharply away from the curb",
+      "Parallel to the centerline of the road"
+    ],
+    "answer_index": 2,
+    "explanation": "When parking uphill with a curb, turn your wheels away from the curb. If the brakes fail, the vehicle will roll backward, and the back of the front tire will catch the curb, stopping the car.",
+    "category": "parking",
+    "difficulty": "medium"
+  },
+  {
+    "state_code": "AK",
+    "prompt": "When driving behind an active snowplow clearing an Alaskan highway, what is the safest and recommended procedure?",
+    "choices": [
+      "Pass the snowplow quickly on the right shoulder",
+      "Tailgate the plow closely to take advantage of the cleared track",
+      "Stay at least 200 feet behind and avoid passing unless absolutely necessary",
+      "Flash your high beams until the plow pulls over to let you pass"
+    ],
+    "answer_index": 2,
+    "explanation": "Snowplows create whiteout conditions and drop anti-icing chemicals. You should maintain a safe following distance of at least 200 feet and never attempt to pass an active plow.",
+    "category": "passing_rules",
+    "difficulty": "hard"
+  },
+  {
+    "state_code": "AK",
+    "prompt": "When preparing to enter a multi-lane roundabout intersection, which vehicles have the legal right-of-way?",
+    "choices": [
+      "Vehicles entering from the right",
+      "Traffic already circulating inside the roundabout",
+      "Commercial trucks and large SUVs",
+      "Vehicles attempting to exit the roundabout"
+    ],
+    "answer_index": 1,
+    "explanation": "Drivers entering a roundabout must always yield the right-of-way to vehicles, bicyclists, and pedestrians already circulating inside the roundabout.",
+    "category": "intersections",
+    "difficulty": "medium"
+  },
+  {
+    "state_code": "AK",
+    "prompt": "A continuous solid double yellow line running down the center of the roadway indicates that:",
+    "choices": [
+      "Passing is permitted only for the lane with a broken line",
+      "The lane is designated for left turns and U-turns only",
+      "Passing is strictly prohibited for traffic traveling in both directions",
+      "You are entering a designated school zone"
+    ],
+    "answer_index": 2,
+    "explanation": "A solid double yellow line separates traffic moving in opposite directions. Neither side is permitted to cross the double lines to pass another vehicle.",
+    "category": "lane_changes",
+    "difficulty": "easy"
+  },
+  {
+    "state_code": "AK",
+    "prompt": "Under ideal dry conditions, the recommended following distance is two seconds. On packed snow or icy roads, you should increase this distance to at least:",
+    "choices": [
+      "3 to 4 seconds",
+      "8 to 10 seconds",
+      "15 to 20 seconds",
+      "One full mile"
+    ],
+    "answer_index": 1,
+    "explanation": "Stopping distances increase exponentially on ice and snow. You should increase your following distance to at least 8 to 10 seconds to allow for safe reaction and braking time.",
+    "category": "defensive_driving",
+    "difficulty": "medium"
+  },
+  {
+    "state_code": "AK",
+    "prompt": "When approaching a railroad crossing where the warning gates have been lowered and red lights are flashing, you must stop your vehicle:",
+    "choices": [
+      "Directly on the tracks to wait for the train",
+      "Between 15 and 50 feet from the nearest rail",
+      "At least 100 feet away from the crossing",
+      "Only if you can physically see the train approaching"
+    ],
+    "answer_index": 1,
+    "explanation": "State law requires drivers to stop between 15 and 50 feet from the nearest rail at a railroad crossing when flashing red lights, lowered gates, or a flagger warn of an approaching train.",
+    "category": "railroad_crossings",
+    "difficulty": "hard"
+  }
+]

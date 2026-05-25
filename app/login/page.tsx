@@ -1,10 +1,8 @@
 import { cookies } from "next/headers";
 import Image from "next/image";
 import { redirect } from "next/navigation";
-import { login, resetPassword, signUp } from "@/app/auth/actions";
-import { PasswordField } from "@/components/PasswordField";
+import { LoginForm } from "@/components/LoginForm";
 import {
-  IconEmail,
   IconMap,
   IconQuiz,
   IconSign,
@@ -114,45 +112,7 @@ export default async function LoginPage({ searchParams }: LoginPageProps) {
 
           {message ? <p className="auth-message">{message}</p> : null}
 
-          <form className="auth-form">
-            <input name="next" type="hidden" value={nextPath} />
-
-            <label className="auth-field">
-              <span>Email</span>
-              <span className="auth-input-wrap">
-                <IconEmail className="auth-field-icon" />
-                <input
-                  autoComplete="email"
-                  name="email"
-                  placeholder="you@example.com"
-                  required
-                  type="email"
-                />
-              </span>
-            </label>
-
-            <PasswordField required />
-
-            <div className="forgot-password-row">
-              <button
-                className="link-button"
-                formAction={resetPassword}
-                formNoValidate
-                type="submit"
-              >
-                Forgot password?
-              </button>
-            </div>
-
-            <div className="auth-actions">
-              <button className="primary-button auth-submit" formAction={login} type="submit">
-                Log in
-              </button>
-              <button className="secondary-button" formAction={signUp} type="submit">
-                Create account
-              </button>
-            </div>
-          </form>
+          <LoginForm nextPath={nextPath} />
         </div>
       </section>
     </main>

@@ -51,7 +51,7 @@ export const DEFAULT_STATES: StateSummary[] = [
   { code: "KY", name: "Kentucky", questionCount: 48, x: 72, y: 52 },
   { code: "TN", name: "Tennessee", questionCount: 84, x: 71, y: 62 },
   { code: "MS", name: "Mississippi", questionCount: 83, x: 65, y: 75 },
-  { code: "AL", name: "Alabama", questionCount: 42, x: 70, y: 75 },
+  { code: "AL", name: "Alabama", questionCount: 25, x: 70, y: 75 },
   { code: "GA", name: "Georgia", questionCount: 39, x: 77, y: 75 },
   { code: "FL", name: "Florida", questionCount: 80, x: 80, y: 88 },
   { code: "SC", name: "South Carolina", questionCount: 34, x: 82, y: 64 },
@@ -70,7 +70,7 @@ export const DEFAULT_STATES: StateSummary[] = [
   { code: "DE", name: "Delaware", questionCount: 8, x: 90, y: 48 },
   { code: "MD", name: "Maryland", questionCount: 8, x: 88, y: 47 },
   { code: "DC", name: "District of Columbia", questionCount: 5, x: 87, y: 46 },
-  { code: "AK", name: "Alaska", questionCount: 6, x: 33, y: 93 },
+  { code: "AK", name: "Alaska", questionCount: 15, x: 33, y: 93 },
   { code: "HI", name: "Hawaii", questionCount: 6, x: 27, y: 95 },
 ];
 
@@ -78,13 +78,32 @@ export function getStateByCode(code: string) {
   return DEFAULT_STATES.find((state) => state.code === code.toUpperCase());
 }
 
-export function mergeStateSummaries(rows: unknown[] | null | undefined) {
+export function buildQuestionCountMap(
+  rows: Array<{ state_code?: string | null }> | null | undefined,
+) {
+  const counts = new Map<string, number>();
+
   if (!Array.isArray(rows)) {
-    return DEFAULT_STATES;
+    return counts;
   }
 
+  for (const row of rows) {
+    const code = String(row.state_code ?? "").toUpperCase();
+    if (!code) {
+      continue;
+    }
+    counts.set(code, (counts.get(code) ?? 0) + 1);
+  }
+
+  return counts;
+}
+
+export function mergeStateSummaries(
+  rows: unknown[] | null | undefined,
+  liveCounts?: Map<string, number>,
+) {
   const byCode = new Map(
-    rows
+    (Array.isArray(rows) ? rows : [])
       .map((row) => normalizeStateRow(row))
       .filter((state): state is Pick<StateSummary, "code" | "name" | "questionCount"> =>
         Boolean(state),
@@ -94,13 +113,19 @@ export function mergeStateSummaries(rows: unknown[] | null | undefined) {
 
   return DEFAULT_STATES.map((state) => {
     const remote = byCode.get(state.code);
-    return remote
-      ? {
-          ...state,
-          name: remote.name || state.name,
-          questionCount: remote.questionCount || state.questionCount,
-        }
-      : state;
+    const live = liveCounts?.get(state.code);
+    const questionCount =
+      live !== undefined
+        ? live
+        : remote
+          ? remote.questionCount
+          : 0;
+
+    return {
+      ...state,
+      name: remote?.name || state.name,
+      questionCount,
+    };
   });
 }
 

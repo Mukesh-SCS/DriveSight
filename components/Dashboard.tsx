@@ -67,7 +67,8 @@ export function Dashboard({ states }: DashboardProps) {
           <h1>State practice tests</h1>
           <p>
             Select your home state, explore the map, and jump into real DMV-style
-            questions for any state.
+            questions. Browse{" "}
+            <Link href="/guides">free study guides</Link> for all 50 states.
           </p>
         </div>
 

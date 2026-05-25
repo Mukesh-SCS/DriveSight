@@ -8,7 +8,9 @@
     "start": "next start",
     "lint": "next lint",
     "extract-signs": "python scripts/extract-road-signs.py",
-    "seed:california": "python scripts/generate-california-seed.py"
+    "seed:california": "python scripts/generate-california-seed.py",
+    "seed:alabama": "python scripts/import-questions.py supabase/seeds/alabama-25.json drivesight-al-25",
+    "seed:alaska": "python scripts/import-questions.py supabase/seeds/alaska-15.json drivesight-ak-15"
   },
   "dependencies": {
     "@supabase/ssr": "^0.10.3",

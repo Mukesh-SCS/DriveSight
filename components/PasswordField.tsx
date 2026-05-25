@@ -35,12 +35,14 @@ export function PasswordField({
           name={name}
           placeholder={placeholder}
           required={required}
+          suppressHydrationWarning
           type={visible ? "text" : "password"}
         />
         <button
           aria-label={visible ? "Hide password" : "Show password"}
           className="password-toggle"
           onClick={() => setVisible((current) => !current)}
+          suppressHydrationWarning
           type="button"
         >
           {visible ? (

@@ -6,7 +6,8 @@ DriveSight is a web app for US driving test prep. Users sign in, pick a state on
 
 - **Account required** — All app routes are protected; users must log in or create an account.
 - **State dashboard** — Interactive US map with per-state question counts, search, and a saved home state.
-- **Practice tests** — Shuffled questions and answer choices, category/difficulty tags, review summary, wrong-answer-only mode, and attempt history.
+- **Practice tests** — Shuffled Q&A, adaptive difficulty, category/difficulty tags, review summary, wrong-answer-only mode, attempt + progress persistence.
+- **Programmatic SEO** — ~800 public pages: `/dmv/{state}/{testType}`, `/dmv/{state}/category/{topic}`, `/guides` (see `docs/SEO_ARCHITECTURE.md`).
 - **Road signs library** — Dedicated viewer at `/road-signs` with sheet navigation, keyboard shortcuts, and scrollable high-resolution sheets.
 
 ## Tech stack
@@ -46,24 +47,39 @@ Find these in the Supabase dashboard under **Project Settings → API**.
 
 ### 3. Database setup
 
-In the Supabase SQL editor, run the schema and seed data:
+In the Supabase SQL editor, run **one** of these (not both required):
 
-```bash
-# File to run:
+**Option A — recommended (fresh or existing project):**
+
+```text
+supabase/migrations/20250522000000_question_metadata_and_attempts.sql
+```
+
+This creates all tables, columns, indexes, and RLS policies. It is safe if tables already exist.
+
+**Option B — full schema + sample rows:**
+
+```text
 supabase/schema.sql
 ```
 
-This creates:
+Then run the progress migration:
+
+```text
+supabase/migrations/20250522000001_user_progress_and_tags.sql
+```
+
+Then load California questions:
+
+```text
+supabase/seeds/california-100.sql
+```
+
+Tables created:
 
 - `state_driving_tests` — state metadata and question counts
 - `driving_test_questions` — prompts, choices, metadata (`category`, `difficulty`, `source`, `is_active`)
 - `user_question_attempts` — per-user answer history (RLS: users can only access their own rows)
-
-Then run the migration (if upgrading an existing database):
-
-```bash
-supabase/migrations/20250522000000_question_metadata_and_attempts.sql
-```
 
 ### California question bank (100 questions)
 
@@ -80,6 +96,38 @@ supabase/seeds/california-100.sql
 ```
 
 JSON format is also available at `supabase/seeds/california-100.json`.
+
+### Alabama question bank (25 questions)
+
+Generate the SQL seed from JSON:
+
+```bash
+npm run seed:alabama
+```
+
+Import in Supabase SQL editor:
+
+```text
+supabase/seeds/alabama-25.sql
+```
+
+Source JSON: `supabase/seeds/alabama-25.json`.
+
+### Alaska question bank (15 questions)
+
+Generate the SQL seed from JSON:
+
+```bash
+npm run seed:alaska
+```
+
+Import in Supabase SQL editor:
+
+```text
+supabase/seeds/alaska-15.sql
+```
+
+Source JSON: `supabase/seeds/alaska-15.json`.
 
 ### 4. Run locally
 
@@ -99,6 +147,8 @@ Open [http://localhost:3000](http://localhost:3000). You will be redirected to `
 | `npm run lint` | Run ESLint |
 | `npm run extract-signs` | Regenerate PNG sheets from `app/assets/us_road_symbol_signs.pdf` (requires `pip install pymupdf`) |
 | `npm run seed:california` | Generate 100 California practice questions (JSON + SQL) |
+| `npm run seed:alabama` | Generate 25 Alabama practice questions SQL from `alabama-25.json` |
+| `npm run seed:alaska` | Generate 15 Alaska practice questions SQL from `alaska-15.json` |
 
 ## Project structure
 
