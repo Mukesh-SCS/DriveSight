@@ -1,0 +1,170 @@
+[
+  {
+    "state_code": "AZ",
+    "prompt": "You are driving on an Arizona highway and suddenly encounter a dense dust storm (haboob) that drops visibility to zero. What is the safest and legally recommended course of action?",
+    "choices": [
+      "Turn on your hazard lights and slow down to 15 mph",
+      "Pull completely off the pavement, turn off all lights, and take your foot off the brake",
+      "Stop immediately in your travel lane and activate your high beams",
+      "Maintain your speed but sound your horn continuously until you exit the storm"
+    ],
+    "answer_index": 1,
+    "explanation": "In an Arizona dust storm, you must pull completely off the roadway, turn off all vehicle lights (including hazard lights), set the emergency brake, and take your foot off the brake pedal so other drivers don't follow your tail lights and rear-end you.",
+    "category": "weather_driving",
+    "difficulty": "hard"
+  },
+  {
+    "state_code": "AZ",
+    "prompt": "In Arizona, driving across the 'gore area' on a freeway is illegal and heavily fined. What is the gore area?",
+    "choices": [
+      "The designated emergency pull-off zone on steep mountain grades",
+      "The far-left High Occupancy Vehicle (HOV) lane during restricted hours",
+      "The painted triangular space between a highway travel lane and an exit/entrance ramp",
+      "The unpaved dirt shoulder on the right side of the interstate"
+    ],
+    "answer_index": 2,
+    "explanation": "The gore area is the triangular painted area between a freeway and an exit or entrance ramp. Crossing over this solid white V-shaped area is dangerous and strictly prohibited in Arizona.",
+    "category": "freeway_driving",
+    "difficulty": "medium"
+  },
+  {
+    "state_code": "AZ",
+    "prompt": "Under Arizona's Graduated Driver License laws, a teen with a Class G license is restricted from driving between what hours during their first six months, unless accompanied by a parent or guardian?",
+    "choices": [
+      "10:00 PM and 5:00 AM",
+      "Midnight and 5:00 AM",
+      "11:00 PM and 6:00 AM",
+      "9:00 PM and 6:00 AM"
+    ],
+    "answer_index": 1,
+    "explanation": "During the first six months of holding a Class G graduated license in Arizona, a teen may not drive between midnight and 5:00 a.m. unless accompanied by a parent, legal guardian, or a certified driving instructor.",
+    "category": "defensive_driving",
+    "difficulty": "hard"
+  },
+  {
+    "state_code": "AZ",
+    "prompt": "When approaching a standard school crossing zone in Arizona, the mandated speed limit is:",
+    "choices": [
+      "15 mph",
+      "20 mph",
+      "25 mph",
+      "10 mph"
+    ],
+    "answer_index": 0,
+    "explanation": "The speed limit approaching a school crosswalk in Arizona is 15 mph. You must adhere to this limit whenever the yellow crosswalk signs are displayed or flashing.",
+    "category": "school_zones",
+    "difficulty": "easy"
+  },
+  {
+    "state_code": "AZ",
+    "prompt": "Arizona law categorizes a DUI as an 'Extreme DUI' when a driver's Blood Alcohol Concentration (BAC) reaches or exceeds:",
+    "choices": [
+      "0.08%",
+      "0.10%",
+      "0.15%",
+      "0.20%"
+    ],
+    "answer_index": 2,
+    "explanation": "While standard DUI in Arizona is 0.08%, an 'Extreme DUI' is charged when a driver has a BAC of 0.15% or higher, which carries significantly harsher jail times and fines.",
+    "category": "dui_alcohol_laws",
+    "difficulty": "medium"
+  },
+  {
+    "state_code": "AZ",
+    "prompt": "You are driving on a two-lane road and a vehicle behind you is tailgating aggressively, flashing their lights to pass. What is the best defensive driving technique?",
+    "choices": [
+      "Tap your brakes rapidly to warn them to back off",
+      "Accelerate to match the speed they wish to travel",
+      "Move slightly to the right side of your lane and let them pass",
+      "Turn on your hazard lights and stay in the center of your lane"
+    ],
+    "answer_index": 2,
+    "explanation": "If someone is tailgating you and wants to pass, you should move slightly to the right side of your lane and avoid speeding up, allowing them to pass safely and reducing the danger to yourself.",
+    "category": "defensive_driving",
+    "difficulty": "easy"
+  },
+  {
+    "state_code": "AZ",
+    "prompt": "In Arizona, the 'Move Over' law requires drivers approaching a stationary emergency vehicle with flashing lights on a multi-lane highway to:",
+    "choices": [
+      "Stop completely until an officer signals you to proceed",
+      "Move into a lane that is not immediately adjacent to the emergency vehicle",
+      "Honk your horn to acknowledge their presence and maintain speed",
+      "Accelerate past the incident quickly to clear the area"
+    ],
+    "answer_index": 1,
+    "explanation": "Arizona's Move Over law mandates that you shift over one lane away from any stationary emergency, maintenance, or stranded vehicle with flashing lights. If you cannot move over safely, you must significantly reduce your speed.",
+    "category": "emergency_vehicles",
+    "difficulty": "medium"
+  },
+  {
+    "state_code": "AZ",
+    "prompt": "Unless otherwise posted by road signs, what is the speed limit in an Arizona business or residential district?",
+    "choices": [
+      "20 mph",
+      "25 mph",
+      "30 mph",
+      "35 mph"
+    ],
+    "answer_index": 1,
+    "explanation": "According to Arizona's basic speed law, the maximum speed in residential and business districts is 25 mph unless a different speed is posted.",
+    "category": "speed_limits",
+    "difficulty": "easy"
+  },
+  {
+    "state_code": "AZ",
+    "prompt": "You are preparing to make a right turn at a red light. After coming to a complete stop, you notice a pedestrian stepping into the crosswalk. Who has the right-of-way?",
+    "choices": [
+      "You have the right-of-way because you are turning",
+      "The pedestrian has the right-of-way and you must wait until they cross safely",
+      "Whoever entered the intersection first has the right-of-way",
+      "You may proceed if you can squeeze past the pedestrian without hitting them"
+    ],
+    "answer_index": 1,
+    "explanation": "Even when making a legal right turn on red, you must yield the right-of-way to all pedestrians crossing in the intersection.",
+    "category": "pedestrian_safety",
+    "difficulty": "easy"
+  },
+  {
+    "state_code": "AZ",
+    "prompt": "Under the 'Stupid Motorist Law' in Arizona, you may be held financially responsible for the cost of your own rescue if you:",
+    "choices": [
+      "Run out of gas on a rural interstate highway",
+      "Deliberately drive past barricades into a flooded wash or roadway",
+      "Fail to carry a spare tire and require a tow truck",
+      "Drive off a mountain road due to excessive speeding"
+    ],
+    "answer_index": 1,
+    "explanation": "Arizona's 'Stupid Motorist Law' states that any driver who bypasses barricades to enter a flooded stretch of roadway and requires emergency extraction can be billed for the cost of the rescue operations.",
+    "category": "weather_driving",
+    "difficulty": "medium"
+  },
+  {
+    "state_code": "AZ",
+    "prompt": "A solid yellow line next to a broken yellow line down the center of the road indicates that passing is:",
+    "choices": [
+      "Prohibited for vehicles traveling in both directions",
+      "Permitted for vehicles adjacent to the solid line",
+      "Permitted for vehicles adjacent to the broken line",
+      "Permitted only for motorcycles and emergency vehicles"
+    ],
+    "answer_index": 2,
+    "explanation": "When there is a solid yellow line next to a broken yellow line, passing is only permitted for the drivers traveling on the side with the broken line, provided the way is clear.",
+    "category": "passing_rules",
+    "difficulty": "easy"
+  },
+  {
+    "state_code": "AZ",
+    "prompt": "When sharing the road with a commercial semi-truck, what is the most dangerous area around the truck, often referred to as the 'No-Zone'?",
+    "choices": [
+      "Directly in front of the truck's grill",
+      "Directly behind the truck's trailer",
+      "The blind spots on the sides, rear, and front of the truck",
+      "The lane to the far left of the truck"
+    ],
+    "answer_index": 2,
+    "explanation": "The 'No-Zone' refers to the large blind spots located immediately in front of, behind, and along the sides of commercial trucks. If you cannot see the truck's mirrors, the driver cannot see you.",
+    "category": "defensive_driving",
+    "difficulty": "medium"
+  }
+]

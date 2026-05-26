@@ -9,6 +9,8 @@ type DashboardProps = {
   states: StateSummary[];
 };
 
+const STATE_CODE_TONES = ["tone-blue", "tone-violet", "tone-emerald", "tone-amber", "tone-rose", "tone-cyan"] as const;
+
 export function Dashboard({ states }: DashboardProps) {
   const [query, setQuery] = useState("");
   const [homeStateCode, setHomeStateCode] = useState("");
@@ -62,59 +64,106 @@ export function Dashboard({ states }: DashboardProps) {
 
   return (
     <section className="dashboard" aria-label="DriveSight dashboard">
-      <header className="dashboard-top">
-        <div className="dashboard-intro">
-          <h1>State practice tests</h1>
-          <p>
-            Select your home state, explore the map, and jump into real DMV-style
-            questions. Browse{" "}
-            <Link href="/guides">free study guides</Link> for all 50 states.
-          </p>
-        </div>
+      <header className="dashboard-hero">
+        <div className="dashboard-hero-glow dashboard-hero-glow-a" aria-hidden="true" />
+        <div className="dashboard-hero-glow dashboard-hero-glow-b" aria-hidden="true" />
 
-        <div className="dashboard-actions">
-          {homeState ? (
-            <Link
-              className="primary-button dashboard-primary-cta"
-              href={`/states/${homeState.code.toLowerCase()}`}
-            >
-              Practice {homeState.name}
-            </Link>
-          ) : null}
-          <Link className="feature-card" href="/road-signs">
-            <span className="feature-card-icon" aria-hidden="true">
-              ⬡
-            </span>
-            <span className="feature-card-copy">
-              <strong>Road symbol signs</strong>
-              <small>{ROAD_SIGN_COUNT} reference sheets</small>
-            </span>
-            <span className="feature-card-arrow" aria-hidden="true">
-              →
-            </span>
-          </Link>
+        <div className="dashboard-hero-content">
+          <p className="dashboard-eyebrow">Your study hub</p>
+          <div className="dashboard-top">
+            <div className="dashboard-intro">
+              <h1>State practice tests</h1>
+              <p>
+                Select your home state, explore the map, and jump into real DMV-style
+                questions. Browse{" "}
+                <Link href="/guides">free study guides</Link> for all 50 states.
+              </p>
+            </div>
+
+            <div className="dashboard-actions">
+              {homeState ? (
+                <Link
+                  className="primary-button dashboard-primary-cta dashboard-cta-pulse"
+                  href={`/states/${homeState.code.toLowerCase()}`}
+                >
+                  <span className="dashboard-cta-icon" aria-hidden="true">
+                    ▶
+                  </span>
+                  Practice {homeState.name}
+                </Link>
+              ) : null}
+              <Link className="feature-card feature-card--signs" href="/road-signs">
+                <span className="feature-card-icon" aria-hidden="true">
+                  ⬡
+                </span>
+                <span className="feature-card-copy">
+                  <strong>Road symbol signs</strong>
+                  <small>{ROAD_SIGN_COUNT} reference sheets</small>
+                </span>
+                <span className="feature-card-arrow" aria-hidden="true">
+                  →
+                </span>
+              </Link>
+              <Link className="feature-card feature-card--guides" href="/guides">
+                <span className="feature-card-icon" aria-hidden="true">
+                  📖
+                </span>
+                <span className="feature-card-copy">
+                  <strong>Study guides</strong>
+                  <small>50-state DMV prep</small>
+                </span>
+                <span className="feature-card-arrow" aria-hidden="true">
+                  →
+                </span>
+              </Link>
+            </div>
+          </div>
+
+          <div className="dashboard-metrics" aria-label="Overview">
+            <article className="metric-card metric-card--states">
+              <span className="metric-card-icon" aria-hidden="true">
+                🗺️
+              </span>
+              <div className="metric-card-copy">
+                <strong>{states.length}</strong>
+                <span>States covered</span>
+              </div>
+            </article>
+            <article className="metric-card metric-card--questions">
+              <span className="metric-card-icon" aria-hidden="true">
+                ✓
+              </span>
+              <div className="metric-card-copy">
+                <strong>{totalQuestions.toLocaleString()}</strong>
+                <span>Practice questions</span>
+              </div>
+            </article>
+            {homeState ? (
+              <article className="metric-card metric-card--home">
+                <span className="metric-card-icon" aria-hidden="true">
+                  ★
+                </span>
+                <div className="metric-card-copy">
+                  <strong>{homeState.code}</strong>
+                  <span>Home state · {homeState.questionCount} Qs</span>
+                </div>
+              </article>
+            ) : null}
+          </div>
         </div>
       </header>
 
-      <div className="dashboard-metrics" aria-label="Overview">
-        <div className="metric-pill">
-          <strong>{states.length}</strong>
-          <span>states</span>
-        </div>
-        <div className="metric-pill">
-          <strong>{totalQuestions.toLocaleString()}</strong>
-          <span>questions</span>
-        </div>
-      </div>
-
       <div className="dashboard-grid">
-        <section className="map-panel">
+        <section className="map-panel map-panel--vibrant">
           <div className="panel-head">
             <h2>United States</h2>
-            <span className="panel-badge">{totalQuestions.toLocaleString()} Qs</span>
+            <span className="panel-badge panel-badge--pulse">
+              {totalQuestions.toLocaleString()} Qs
+            </span>
           </div>
 
-          <div className="state-map" aria-label="United States state test map">
+          <div className="state-map state-map--interactive" aria-label="United States state test map">
+            <div className="state-map-shine" aria-hidden="true" />
             <img
               alt=""
               aria-hidden="true"
@@ -139,9 +188,9 @@ export function Dashboard({ states }: DashboardProps) {
           </div>
         </section>
 
-        <aside className="state-sidebar">
+        <aside className="state-sidebar state-sidebar--vibrant">
           <div className="sidebar-block">
-            <label className="field">
+            <label className="field field--interactive">
               <span>Home state</span>
               <select
                 onChange={(event) => handleHomeStateChange(event.target.value)}
@@ -156,7 +205,7 @@ export function Dashboard({ states }: DashboardProps) {
               </select>
             </label>
 
-            <label className="field">
+            <label className="field field--interactive">
               <span>Search</span>
               <input
                 onChange={(event) => setQuery(event.target.value)}
@@ -171,17 +220,20 @@ export function Dashboard({ states }: DashboardProps) {
             {filteredStates.length === 0 ? (
               <p className="state-list-empty">No states match your search.</p>
             ) : (
-              filteredStates.map((state) => (
+              filteredStates.map((state, index) => (
                 <Link
                   className={`state-row ${state.code === homeStateCode ? "is-home-row" : ""}`}
                   href={`/states/${state.code.toLowerCase()}`}
                   key={state.code}
+                  style={{ animationDelay: `${Math.min(index, 12) * 35}ms` }}
                 >
-                  <span className="state-code">{state.code}</span>
-                  <span className="state-name">{state.name}</span>
-                  <span className="state-count">
-                    {state.questionCount.toLocaleString()}
+                  <span
+                    className={`state-code ${STATE_CODE_TONES[index % STATE_CODE_TONES.length]}`}
+                  >
+                    {state.code}
                   </span>
+                  <span className="state-name">{state.name}</span>
+                  <span className="state-count">{state.questionCount.toLocaleString()}</span>
                 </Link>
               ))
             )}

@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { login, resetPassword, signUp } from "@/app/auth/actions";
 import { PasswordField } from "@/components/PasswordField";
 import { IconEmail } from "@/components/AuthIcons";
@@ -60,6 +61,12 @@ export function LoginForm({ nextPath }: LoginFormProps) {
           Create account
         </button>
       </div>
+
+      <p className="auth-legal-note">
+        By signing in, you agree to our{" "}
+        <Link href="/terms">Terms</Link>, <Link href="/privacy">Privacy Policy</Link>, and{" "}
+        <Link href="/cookies">Cookie Policy</Link>.
+      </p>
     </form>
   );
 }

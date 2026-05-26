@@ -9,7 +9,18 @@ ROOT = Path(__file__).resolve().parents[1]
 STATE_NAMES: dict[str, str] = {
     "AK": "Alaska",
     "AL": "Alabama",
+    "AR": "Arkansas",
+    "AZ": "Arizona",
     "CA": "California",
+    "CO": "Colorado",
+    "CT": "Connecticut",
+    "DE": "Delaware",
+    "FL": "Florida",
+    "GA": "Georgia",
+    "HI": "Hawaii",
+    "ID": "Idaho",
+    "IL": "Illinois",
+    "IN": "Indiana",
 }
 
 
@@ -70,6 +81,14 @@ def main() -> None:
 
     out_path.write_text(sql, encoding="utf-8")
     print(f"Wrote {len(questions)} questions to {out_path}")
+
+    import subprocess
+
+    subprocess.run(
+        [sys.executable, str(ROOT / "scripts" / "build-deploy-sql.py")],
+        check=True,
+        cwd=ROOT,
+    )
 
 
 if __name__ == "__main__":

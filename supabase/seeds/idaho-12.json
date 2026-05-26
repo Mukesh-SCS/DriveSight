@@ -1,0 +1,170 @@
+[
+  {
+    "state_code": "ID",
+    "prompt": "Under a unique Idaho law, a driver of a passenger car may legally exceed the posted speed limit by up to 15 mph to safely pass a slower-moving vehicle under which specific condition?",
+    "choices": [
+      "On a four-lane divided interstate highway",
+      "When passing a semi-truck on a steep uphill grade",
+      "On a two-lane roadway with a posted speed limit of 55 mph or greater",
+      "When passing a slow-moving agricultural tractor in a school zone"
+    ],
+    "answer_index": 2,
+    "explanation": "Idaho law uniquely allows passenger vehicles and motorcycles to temporarily exceed the speed limit by up to 15 mph to safely complete a pass, but only on two-lane roads with a posted speed limit of 55 mph or greater.",
+    "category": "passing_rules",
+    "difficulty": "hard"
+  },
+  {
+    "state_code": "ID",
+    "prompt": "Unless otherwise posted, what is the maximum statutory speed limit on designated rural interstate highways in Idaho?",
+    "choices": [
+      "65 mph",
+      "70 mph",
+      "75 mph",
+      "80 mph"
+    ],
+    "answer_index": 3,
+    "explanation": "Idaho is one of the few states where the maximum lawful speed limit on designated stretches of rural interstate highways can be up to 80 mph, unless otherwise posted.",
+    "category": "speed_limits",
+    "difficulty": "medium"
+  },
+  {
+    "state_code": "ID",
+    "prompt": "Idaho's 'Basic Rule' regarding driving speeds means that regardless of the officially posted speed limit, you must always:",
+    "choices": [
+      "Drive at exactly the posted speed limit at all times",
+      "Drive at a speed that is reasonable and prudent for the current road and weather conditions",
+      "Drive at least 5 mph below the speed limit to avoid a citation",
+      "Keep pace with the flow of traffic even if it exceeds the posted limit"
+    ],
+    "answer_index": 1,
+    "explanation": "The Basic Rule requires drivers to operate their vehicle at a speed that is reasonable and prudent for the actual physical conditions of the road, regardless of what the posted speed limit sign says.",
+    "category": "defensive_driving",
+    "difficulty": "easy"
+  },
+  {
+    "state_code": "ID",
+    "prompt": "When approaching a stationary emergency vehicle displaying flashing lights on a multi-lane Idaho highway, the Move Over law requires you to:",
+    "choices": [
+      "Honk your horn continuously to ensure workers see you",
+      "Stop completely in your lane and wait for directions",
+      "Move over one lane away from the vehicle, or slow down below the posted speed limit if shifting lanes is impossible",
+      "Accelerate quickly to clear the hazardous area"
+    ],
+    "answer_index": 2,
+    "explanation": "Idaho's Move Over law requires drivers approaching stationary police, fire, or tow vehicles with flashing lights to move to an adjacent lane, or significantly reduce their speed if shifting lanes is unsafe.",
+    "category": "emergency_vehicles",
+    "difficulty": "medium"
+  },
+  {
+    "state_code": "ID",
+    "prompt": "You are driving on a rural Idaho highway when heavy snow begins to fall and stick to the pavement. How should you adjust your recommended following distance behind other vehicles?",
+    "choices": [
+      "Decrease it to 2 seconds to utilize the tire tracks of the vehicle ahead",
+      "Maintain the standard 3-second rule",
+      "Increase it to 5 seconds",
+      "Increase it to a minimum of 8 to 10 seconds"
+    ],
+    "answer_index": 3,
+    "explanation": "Stopping distances increase drastically on snow and ice. The Idaho Driver's Manual recommends increasing your following distance from the standard 3 seconds to at least 8 to 10 seconds in winter weather conditions.",
+    "category": "weather_driving",
+    "difficulty": "medium"
+  },
+  {
+    "state_code": "ID",
+    "prompt": "When preparing to enter a multi-lane roundabout intersection in Idaho, who legally holds the right-of-way?",
+    "choices": [
+      "The larger, heavier vehicle",
+      "Vehicles attempting to enter the roundabout from your right",
+      "Vehicles already circulating inside the roundabout",
+      "The vehicle moving at the fastest speed"
+    ],
+    "answer_index": 2,
+    "explanation": "Drivers entering a roundabout must yield the right-of-way to vehicles, bicyclists, and pedestrians already actively circulating inside the intersection.",
+    "category": "intersections",
+    "difficulty": "easy"
+  },
+  {
+    "state_code": "ID",
+    "prompt": "Under Idaho's Zero Tolerance law, a driver under the age of 21 will face severe penalties if arrested for driving with a Blood Alcohol Concentration (BAC) equal to or greater than:",
+    "choices": [
+      "0.02%",
+      "0.04%",
+      "0.06%",
+      "0.08%"
+    ],
+    "answer_index": 0,
+    "explanation": "Idaho enforces a strict Zero Tolerance policy for underage drinking. If a driver under 21 operates a motor vehicle with a BAC of 0.02% or higher, they will be charged with a DUI.",
+    "category": "dui_alcohol_laws",
+    "difficulty": "medium"
+  },
+  {
+    "state_code": "ID",
+    "prompt": "While traveling on an Idaho interstate highway, you notice a paved crossover path located in the grassy median separating opposing traffic lanes. Who is legally permitted to use this crossover?",
+    "choices": [
+      "Any vehicle wishing to make a U-turn during daylight hours",
+      "Only drivers who have missed an exit and need to turn around",
+      "Only authorized emergency and highway maintenance vehicles",
+      "Any vehicle if traffic in the opposing lane is completely clear"
+    ],
+    "answer_index": 2,
+    "explanation": "Median crossovers on interstate highways are strictly reserved for use by emergency responders and authorized highway maintenance vehicles. It is illegal for private motorists to use them to change directions.",
+    "category": "freeway_driving",
+    "difficulty": "easy"
+  },
+  {
+    "state_code": "ID",
+    "prompt": "You are parking your vehicle facing uphill on a mountain road in Idaho that does not have a physical curb. To prevent rolling into traffic, your front wheels should be turned:",
+    "choices": [
+      "Sharply to the left, toward the center of the road",
+      "Sharply to the right, toward the edge of the road or shoulder",
+      "Perfectly straight",
+      "Slightly to the left"
+    ],
+    "answer_index": 1,
+    "explanation": "When parking uphill without a curb, always turn your front wheels to the right (toward the shoulder). If the brakes fail, the vehicle will roll off the road into the dirt, not backward into traffic.",
+    "category": "parking",
+    "difficulty": "medium"
+  },
+  {
+    "state_code": "ID",
+    "prompt": "You approach an intersection with a solid green traffic light and intend to make a left turn. There is no green left-turn arrow illuminated. What is your legal obligation?",
+    "choices": [
+      "Turn immediately; the solid green light gives you the right-of-way",
+      "Yield to oncoming traffic and pedestrians, turning only when the intersection is clear",
+      "Pull fully into the intersection and wait for the light to turn red before turning",
+      "Stop completely behind the limit line before proceeding with the turn"
+    ],
+    "answer_index": 1,
+    "explanation": "A solid green light means you can proceed, but you do not have a protected turn. You must yield the right-of-way to all oncoming traffic and pedestrians before completing a left turn.",
+    "category": "traffic_signals",
+    "difficulty": "easy"
+  },
+  {
+    "state_code": "ID",
+    "prompt": "According to Idaho's distracted driving laws, the act of manually typing or reading a text message while operating a motor vehicle on public roads is:",
+    "choices": [
+      "Permitted only when stopped at a red traffic light",
+      "Illegal only for drivers under the age of 18",
+      "Strictly illegal for all drivers, regardless of age",
+      "Permitted if the phone is held below the steering wheel out of view"
+    ],
+    "answer_index": 2,
+    "explanation": "Idaho law prohibits all drivers from writing, sending, or reading text-based communications while operating a moving motor vehicle on any public road.",
+    "category": "distracted_driving",
+    "difficulty": "easy"
+  },
+  {
+    "state_code": "ID",
+    "prompt": "You are driving on a four-lane Idaho road (two lanes traveling in each direction) separated only by a double yellow line. A school bus traveling in the opposite direction stops with its red lights flashing. Must you stop?",
+    "choices": [
+      "Yes, all traffic in both directions must stop for a school bus on an undivided road",
+      "No, only traffic traveling in the same direction as the bus must stop on roads with four or more lanes",
+      "Yes, but you may roll past the bus at 10 mph if no children are visible",
+      "No, because the double yellow line acts as a legal physical barrier"
+    ],
+    "answer_index": 1,
+    "explanation": "In Idaho, if a roadway has four or more lanes, only traffic traveling in the same direction as the stopped school bus is required to stop. Traffic in the opposite lanes may proceed with caution.",
+    "category": "school_zones",
+    "difficulty": "hard"
+  }
+]

@@ -1,0 +1,142 @@
+[
+  {
+    "state_code": "AR",
+    "prompt": "Under Arkansas law, a driver must automatically turn on their vehicle's headlights whenever:",
+    "choices": [
+      "Driving over the speed of 55 mph",
+      "The vehicle's windshield wipers are in use due to weather",
+      "Entering any marked construction or work zone",
+      "Driving on an unpaved county road"
+    ],
+    "answer_index": 1,
+    "explanation": "Arkansas law requires that a driver turn on their headlights whenever their windshield wipers are in use to clear rain, snow, or other precipitation.",
+    "category": "weather_driving",
+    "difficulty": "easy"
+  },
+  {
+    "state_code": "AR",
+    "prompt": "On a multi-lane highway in Arkansas, the far left lane is legally designated for:",
+    "choices": [
+      "Vehicles traveling exactly at the posted speed limit",
+      "Commercial semi-trucks and buses only",
+      "Passing slower traffic and preparing for left turns",
+      "Drivers utilizing cruise control systems"
+    ],
+    "answer_index": 2,
+    "explanation": "Arkansas enforces a 'keep right' law. The left lane on multi-lane highways is legally intended only for passing slower vehicles or preparing to make a left turn.",
+    "category": "lane_changes",
+    "difficulty": "medium"
+  },
+  {
+    "state_code": "AR",
+    "prompt": "You are driving on an Arkansas highway divided by a 20-foot wide grass median. A school bus traveling in the opposite direction has stopped with its red lights flashing. What must you do?",
+    "choices": [
+      "Come to a complete stop and wait for the lights to turn off",
+      "Slow to 15 mph and proceed cautiously past the bus",
+      "You are not required to stop because the highway is divided by a median",
+      "Stop only if children are actively crossing the grass median"
+    ],
+    "answer_index": 2,
+    "explanation": "In Arkansas, if a highway is divided by a physical barrier or an unpaved median strip at least 20 feet wide, drivers traveling in the opposite direction of a stopped school bus do not have to stop.",
+    "category": "school_zones",
+    "difficulty": "hard"
+  },
+  {
+    "state_code": "AR",
+    "prompt": "In Arkansas, 'Paul's Law' severely restricts distracted driving. Which of the following is true regarding cell phone use while driving?",
+    "choices": [
+      "Texting is illegal for all drivers, regardless of age",
+      "Drivers over 21 may text if stopped at a red light",
+      "Drivers ages 18-20 may use a handheld phone for any reason",
+      "Only drivers with a learner's permit are banned from texting"
+    ],
+    "answer_index": 0,
+    "explanation": "Under 'Paul's Law' in Arkansas, writing, typing, reading, or sending text messages on a wireless device is strictly illegal for all drivers, regardless of age or experience level.",
+    "category": "distracted_driving",
+    "difficulty": "easy"
+  },
+  {
+    "state_code": "AR",
+    "prompt": "When approaching a flashing red traffic light at an intersection, your legal obligation is to:",
+    "choices": [
+      "Slow down and yield to cross traffic without coming to a full stop",
+      "Treat the signal as a stop sign, stopping completely before proceeding safely",
+      "Treat the signal as a yield sign, only stopping if pedestrians are present",
+      "Wait until the light turns solid green to proceed"
+    ],
+    "answer_index": 1,
+    "explanation": "A flashing red traffic light has the exact same legal meaning as a stop sign. You must come to a complete stop, yield the right-of-way, and proceed only when it is safe to do so.",
+    "category": "traffic_signals",
+    "difficulty": "easy"
+  },
+  {
+    "state_code": "AR",
+    "prompt": "According to Arkansas laws regarding railroad crossings, a driver must stop their vehicle within what distance from the nearest track when a train is approaching?",
+    "choices": [
+      "No closer than 5 feet and no further than 20 feet",
+      "No closer than 15 feet and no further than 50 feet",
+      "Exactly 30 feet from the nearest rail",
+      "Only behind the solid white stop line"
+    ],
+    "answer_index": 1,
+    "explanation": "When approaching a railroad crossing with active warnings or a visible train, Arkansas law requires you to stop within 50 feet, but no less than 15 feet, from the nearest rail.",
+    "category": "railroad_crossings",
+    "difficulty": "medium"
+  },
+  {
+    "state_code": "AR",
+    "prompt": "You are driving on an unpaved county dirt road and approach an intersection with a paved state highway. Who has the right-of-way?",
+    "choices": [
+      "The vehicle on the unpaved road",
+      "The vehicle on the paved state highway",
+      "The vehicle that arrives at the intersection first",
+      "The vehicle making a right turn"
+    ],
+    "answer_index": 1,
+    "explanation": "When entering a paved thoroughfare from an unpaved dirt or gravel road, the vehicle entering from the unpaved road must yield the right-of-way to traffic on the paved road.",
+    "category": "right_of_way",
+    "difficulty": "medium"
+  },
+  {
+    "state_code": "AR",
+    "prompt": "For drivers under the legal drinking age of 21 in Arkansas, the state's 'Zero Tolerance' law considers it illegal to drive with a Blood Alcohol Concentration (BAC) of:",
+    "choices": [
+      "0.08% or higher",
+      "0.05% or higher",
+      "0.02% or higher",
+      "0.10% or higher"
+    ],
+    "answer_index": 2,
+    "explanation": "Arkansas has a strict Zero Tolerance law for underage drinking and driving. A BAC of 0.02% or greater is grounds for an underage DUI charge.",
+    "category": "dui_alcohol_laws",
+    "difficulty": "hard"
+  },
+  {
+    "state_code": "AR",
+    "prompt": "When parallel parking your vehicle along an Arkansas street, your wheels must be positioned:",
+    "choices": [
+      "More than 24 inches from the right curb",
+      "Resting directly on top of the curb line",
+      "No more than 18 inches from the right curb",
+      "Turned sharply to the left at all times"
+    ],
+    "answer_index": 2,
+    "explanation": "To properly parallel park and ensure you are not obstructing traffic, your vehicle's wheels must be positioned parallel to and no more than 18 inches from the curb.",
+    "category": "parking",
+    "difficulty": "medium"
+  },
+  {
+    "state_code": "AR",
+    "prompt": "A solid white line separating traffic traveling in the same direction signifies that:",
+    "choices": [
+      "Lane changes are encouraged to pass slower traffic",
+      "The lane is designated for High Occupancy Vehicles (HOV)",
+      "Lane changes are discouraged, and you should stay in your lane",
+      "You are entering a designated school zone"
+    ],
+    "answer_index": 2,
+    "explanation": "While broken white lines allow passing, a solid white line between lanes of traffic moving in the same direction indicates that lane changes are hazardous and strongly discouraged.",
+    "category": "road_signs",
+    "difficulty": "easy"
+  }
+]

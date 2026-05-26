@@ -45,89 +45,93 @@ NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY=your-anon-or-publishable-key
 
 Find these in the Supabase dashboard under **Project Settings → API**.
 
-### 3. Database setup
+### 3. Database setup (schema + all question seeds)
 
-In the Supabase SQL editor, run **one** of these (not both required):
+SQL is split into editable parts and **bundled automatically**:
 
-**Option A — recommended (fresh or existing project):**
+| Path | Purpose |
+|------|---------|
+| `supabase/schema/base.sql` | Tables, RLS, all 50 states + DC, `sync_state_question_counts()` |
+| `supabase/seeds/*.sql` | Per-state question banks (CA, AL, AK, …) |
+| `supabase/schema.sql` | **Generated** — run this once in Supabase SQL editor (schema + all seeds) |
+| `supabase/seed.sql` | **Generated** — question seeds only (after schema exists) |
+| `supabase/migrations/` | Runs on deploy when using Supabase CLI / GitHub integration |
 
-```text
-supabase/migrations/20250522000000_question_metadata_and_attempts.sql
+Rebuild after editing base schema or any seed:
+
+```bash
+npm run db:build
 ```
 
-This creates all tables, columns, indexes, and RLS policies. It is safe if tables already exist.
+**Option A — Supabase SQL editor (one file):**
 
-**Option B — full schema + sample rows:**
+Run the full generated file:
 
 ```text
 supabase/schema.sql
 ```
 
-Then run the progress migration:
+That creates tables, loads every file in `supabase/seeds/`, then syncs `question_count` on each state from active rows.
 
-```text
-supabase/migrations/20250522000001_user_progress_and_tags.sql
+**Option B — Supabase CLI (migrations + seeds):**
+
+If you see `Cannot find project ref. Have you run supabase link?`, use **one** of these:
+
+*B1 — Link the project (opens browser to log in):*
+
+```bash
+npx supabase login
+npx supabase link --project-ref YOUR_PROJECT_REF
 ```
 
-Then load California questions:
+Use the ref from your dashboard URL or from `NEXT_PUBLIC_SUPABASE_URL` (`https://YOUR_PROJECT_REF.supabase.co`). When prompted, enter your **database password** (Supabase → Project Settings → Database).
 
-```text
-supabase/seeds/california-100.sql
+Then push:
+
+```bash
+npm run db:build
+npx supabase db push --include-seed
 ```
 
-Tables created:
+*B2 — Push with database password (no link):*
 
-- `state_driving_tests` — state metadata and question counts
+Add to `.env.local` (see `.env.example`):
+
+```env
+SUPABASE_DB_PASSWORD=your-database-password
+```
+
+Then:
+
+```bash
+npm run db:build
+npm run db:push
+```
+
+Migrations apply in order (`20250522000000` → `000001` → `000002` → `100000` seeds). `db:push` also applies `supabase/seed.sql` when using `--include-seed`.
+
+**Option C — SQL editor only (no CLI):**
+
+```bash
+npm run db:build
+```
+
+Paste/run `supabase/schema.sql` in the Supabase SQL editor.
+
+Tables:
+
+- `state_driving_tests` — state metadata; counts updated by `sync_state_question_counts()`
 - `driving_test_questions` — prompts, choices, metadata (`category`, `difficulty`, `source`, `is_active`)
-- `user_question_attempts` — per-user answer history (RLS: users can only access their own rows)
+- `user_question_attempts` — per-user answer history
+- `user_progress` — streaks, accuracy, weak categories
 
-### California question bank (100 questions)
+### Adding a new state question bank
 
-Generate seed files:
+1. Add `supabase/seeds/your-state-N.json`
+2. `python scripts/import-questions.py supabase/seeds/your-state-N.json drivesight-xx-n` (also runs `db:build`)
+3. Deploy: push migrations or re-run `supabase/schema.sql`
 
-```bash
-npm run seed:california
-```
-
-Import in Supabase SQL editor:
-
-```bash
-supabase/seeds/california-100.sql
-```
-
-JSON format is also available at `supabase/seeds/california-100.json`.
-
-### Alabama question bank (25 questions)
-
-Generate the SQL seed from JSON:
-
-```bash
-npm run seed:alabama
-```
-
-Import in Supabase SQL editor:
-
-```text
-supabase/seeds/alabama-25.sql
-```
-
-Source JSON: `supabase/seeds/alabama-25.json`.
-
-### Alaska question bank (15 questions)
-
-Generate the SQL seed from JSON:
-
-```bash
-npm run seed:alaska
-```
-
-Import in Supabase SQL editor:
-
-```text
-supabase/seeds/alaska-15.sql
-```
-
-Source JSON: `supabase/seeds/alaska-15.json`.
+Existing banks: California (100 + 12 extra), Colorado (12), Connecticut (12), Delaware (12), Florida (11), Georgia (12), Hawaii (12), Idaho (12), Illinois (12), Indiana (12), Alabama (25), Alaska (15), Arizona (12), Arkansas (10) — JSON + SQL under `supabase/seeds/`.
 
 ### 4. Run locally
 
@@ -149,6 +153,20 @@ Open [http://localhost:3000](http://localhost:3000). You will be redirected to `
 | `npm run seed:california` | Generate 100 California practice questions (JSON + SQL) |
 | `npm run seed:alabama` | Generate 25 Alabama practice questions SQL from `alabama-25.json` |
 | `npm run seed:alaska` | Generate 15 Alaska practice questions SQL from `alaska-15.json` |
+| `npm run db:build` | Bundle `base.sql` + all `seeds/*.sql` → `schema.sql`, `seed.sql`, migration |
+| `npm run db:push` | Push migrations + seeds using `SUPABASE_DB_PASSWORD` or `DATABASE_URL` in `.env.local` |
+| `npm run seed:arizona` | Generate 12 Arizona questions SQL from `arizona-12.json` |
+| `npm run seed:arkansas` | Generate 10 Arkansas questions SQL from `arkansas-10.json` |
+| `npm run seed:california-extra` | Generate 12 additional California questions (`california-extra-12.json`) |
+| `npm run seed:colorado` | Generate 12 Colorado questions SQL from `colorado-12.json` |
+| `npm run seed:connecticut` | Generate 12 Connecticut questions SQL from `connecticut-12.json` |
+| `npm run seed:delaware` | Generate 12 Delaware questions SQL from `delaware-12.json` |
+| `npm run seed:florida` | Generate 11 Florida questions SQL from `florida-11.json` |
+| `npm run seed:georgia` | Generate 12 Georgia questions SQL from `georgia-12.json` |
+| `npm run seed:hawaii` | Generate 12 Hawaii questions SQL from `hawaii-12.json` |
+| `npm run seed:idaho` | Generate 12 Idaho questions SQL from `idaho-12.json` |
+| `npm run seed:illinois` | Generate 12 Illinois questions SQL from `illinois-12.json` |
+| `npm run seed:indiana` | Generate 12 Indiana questions SQL from `indiana-12.json` |
 
 ## Project structure
 

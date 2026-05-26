@@ -1,0 +1,170 @@
+[
+  {
+    "state_code": "IL",
+    "prompt": "Under Illinois' 'Scott's Law' (the Move Over Law), what must you do when approaching any stationary vehicle displaying flashing lights on the side of a multi-lane highway?",
+    "choices": [
+      "Honk your horn to let the driver know you are passing",
+      "Maintain your speed but turn on your hazard lights",
+      "Reduce your speed significantly and change lanes away from the stationary vehicle if it is safe to do so",
+      "Come to a complete stop and wait for a police officer to wave you around"
+    ],
+    "answer_index": 2,
+    "explanation": "Scott's Law in Illinois requires drivers approaching ANY stationary vehicle with flashing hazard lights (including passenger cars, tow trucks, and police) to slow down, proceed with caution, and change lanes away from the vehicle if possible.",
+    "category": "emergency_vehicles",
+    "difficulty": "medium"
+  },
+  {
+    "state_code": "IL",
+    "prompt": "Unless otherwise posted, what is the strict maximum speed limit in an Illinois school zone on school days between the hours of 7:00 a.m. and 4:00 p.m. when children are present?",
+    "choices": [
+      "15 mph",
+      "20 mph",
+      "25 mph",
+      "30 mph"
+    ],
+    "answer_index": 1,
+    "explanation": "In Illinois, the mandated speed limit in a designated school zone is 20 miles per hour on school days when children are actively present. Fines for violating this are severely increased.",
+    "category": "school_zones",
+    "difficulty": "easy"
+  },
+  {
+    "state_code": "IL",
+    "prompt": "You are driving on a four-lane Illinois highway (two lanes in each direction) separated only by a painted double yellow line. A school bus traveling in the opposite direction stops and extends its red flashing lights. What is your legal obligation?",
+    "choices": [
+      "Stop immediately; all traffic on undivided highways must stop",
+      "Slow down to 10 mph and pass cautiously",
+      "You are not required to stop if you are traveling in the opposite direction on a road with four or more lanes",
+      "Stop only if the crossing arm physically blocks your travel lane"
+    ],
+    "answer_index": 2,
+    "explanation": "In Illinois, if you are traveling on a highway with four or more lanes, you do not need to stop for a school bus traveling in the opposite direction, even if the road is undivided. Only traffic behind the bus must stop.",
+    "category": "school_zones",
+    "difficulty": "hard"
+  },
+  {
+    "state_code": "IL",
+    "prompt": "Illinois enforces a 'Zero Tolerance' law regarding underage drinking and driving. If a driver under the age of 21 is stopped and tests positive for any trace of alcohol in their system, their license will be automatically suspended for a minimum of:",
+    "choices": [
+      "30 days",
+      "3 months",
+      "6 months",
+      "1 year"
+    ],
+    "answer_index": 2,
+    "explanation": "Under the Zero Tolerance Law, if a driver under 21 is caught with any trace of alcohol in their system, their driving privileges will automatically be suspended for a minimum of 6 months for a first offense.",
+    "category": "dui_alcohol_laws",
+    "difficulty": "hard"
+  },
+  {
+    "state_code": "IL",
+    "prompt": "According to the Illinois distracted driving laws, under what condition is it legally permissible for a driver of any age to text while driving?",
+    "choices": [
+      "Only when stopped at a solid red traffic light",
+      "Only when utilizing voice-activated, hands-free technology",
+      "If the phone is kept below the dashboard out of the driver's direct line of sight",
+      "Never, texting is universally banned even with voice commands"
+    ],
+    "answer_index": 1,
+    "explanation": "Illinois law strictly prohibits the use of hand-held cell phones, texting, or using other electronic communications while operating a motor vehicle. You may only text if you are using voice-activated, entirely hands-free technology.",
+    "category": "distracted_driving",
+    "difficulty": "medium"
+  },
+  {
+    "state_code": "IL",
+    "prompt": "When preparing to execute a legal left turn on a solid red light in Illinois, you must first come to a complete stop and yield. Under what specific condition is this turn allowed?",
+    "choices": [
+      "When turning from a two-way street onto another two-way street",
+      "When turning from a one-way street onto another one-way street",
+      "When turning from a two-way street onto a one-way street",
+      "Whenever the intersection is completely clear of cross traffic"
+    ],
+    "answer_index": 1,
+    "explanation": "In Illinois, turning left on a solid red light is highly restricted. It is only legal when you are turning from a one-way street directly onto another one-way street that has traffic moving to the left.",
+    "category": "traffic_signals",
+    "difficulty": "medium"
+  },
+  {
+    "state_code": "IL",
+    "prompt": "When passing a bicyclist who is traveling in the same direction on an Illinois road, state law dictates that a motor vehicle must leave a minimum physical clearance of at least:",
+    "choices": [
+      "2 feet",
+      "3 feet",
+      "4 feet",
+      "5 feet"
+    ],
+    "answer_index": 1,
+    "explanation": "Illinois' safe passing law requires drivers to provide a minimum of 3 feet of space when passing a bicyclist, and the driver must not return to the right side of the lane until safely clear.",
+    "category": "passing_rules",
+    "difficulty": "easy"
+  },
+  {
+    "state_code": "IL",
+    "prompt": "To increase visibility and safety during inclement weather, Illinois state law requires that you turn on your vehicle's headlights whenever:",
+    "choices": [
+      "You are traveling on an interstate highway",
+      "The temperature falls below freezing",
+      "You must use your windshield wipers due to rain, snow, or fog",
+      "You enter a marked construction or work zone"
+    ],
+    "answer_index": 2,
+    "explanation": "Illinois law explicitly mandates that a driver must turn on their headlights any time atmospheric conditions require the use of their windshield wipers to maintain visibility.",
+    "category": "weather_driving",
+    "difficulty": "easy"
+  },
+  {
+    "state_code": "IL",
+    "prompt": "You are parking your vehicle facing uphill on a steep street in Chicago that features a prominent concrete curb. To secure your vehicle against rolling into traffic, your front wheels should be turned:",
+    "choices": [
+      "Sharply to the left, away from the curb",
+      "Sharply to the right, toward the curb",
+      "Parallel to the centerline of the roadway",
+      "Directly onto the sidewalk"
+    ],
+    "answer_index": 0,
+    "explanation": "When parking uphill with a curb, turn your front wheels sharply away from the curb. This ensures that if the vehicle begins to roll backward, the back of the front tire will hit the curb and stop the car.",
+    "category": "parking",
+    "difficulty": "medium"
+  },
+  {
+    "state_code": "IL",
+    "prompt": "At a four-way stop intersection in Illinois, three vehicles arrive simultaneously. Which vehicle legally holds the right-of-way?",
+    "choices": [
+      "The vehicle traveling at the fastest speed",
+      "The vehicle making a left-hand turn",
+      "The vehicle positioned furthest to the right",
+      "The vehicle making a right-hand turn"
+    ],
+    "answer_index": 2,
+    "explanation": "At an intersection controlled by four-way stop signs where multiple vehicles arrive at the same time, the driver of the vehicle on the left must yield the right-of-way to the vehicle on the immediate right.",
+    "category": "right_of_way",
+    "difficulty": "easy"
+  },
+  {
+    "state_code": "IL",
+    "prompt": "If you approach a railroad crossing in Illinois that does not have warning lights or lowered crossing gates, what is your safest and legal course of action?",
+    "choices": [
+      "Accelerate to clear the tracks as quickly as possible",
+      "Slow down, look in both directions along the tracks, and listen for an approaching train before crossing",
+      "Stop completely at the tracks regardless of whether a train is visible",
+      "Shift gears manually while crossing the tracks"
+    ],
+    "answer_index": 1,
+    "explanation": "At passive railroad crossings (those without active gates or flashing lights), it is the driver's responsibility to slow down, look both ways, and listen carefully for a train before proceeding across the tracks.",
+    "category": "railroad_crossings",
+    "difficulty": "easy"
+  },
+  {
+    "state_code": "IL",
+    "prompt": "When entering an Illinois interstate from an acceleration lane, your primary responsibility to ensure a safe merge is to:",
+    "choices": [
+      "Come to a full stop at the end of the ramp and wait for an opening",
+      "Drive down the shoulder until traffic slows down enough to let you in",
+      "Adjust your speed to match the flow of highway traffic and yield to vehicles already on the interstate",
+      "Signal continuously, forcing drivers in the right lane to move to the left lane"
+    ],
+    "answer_index": 2,
+    "explanation": "Drivers entering a highway from an acceleration lane must yield the right-of-way to vehicles already traveling on the mainline. You must adjust your speed to find a safe gap in the traffic flow.",
+    "category": "merging",
+    "difficulty": "medium"
+  }
+]

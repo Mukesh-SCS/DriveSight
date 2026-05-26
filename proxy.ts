@@ -12,8 +12,18 @@ export const createClient = async (request: NextRequest) => {
     },
   });
 
+  const publicWhenUnconfigured = [
+    "/login",
+    "/terms",
+    "/privacy",
+    "/cookies",
+    "/guides",
+    "/road-signs",
+  ];
+
   if (!supabaseUrl || !supabaseKey) {
-    return pathname === "/login"
+    return publicWhenUnconfigured.includes(pathname) ||
+      pathname.startsWith("/dmv/")
       ? supabaseResponse
       : NextResponse.redirect(new URL("/login", request.url));
   }
@@ -41,12 +51,20 @@ export const createClient = async (request: NextRequest) => {
     data: { user },
   } = await supabase.auth.getUser();
 
-  const publicPaths = ["/login", "/auth/callback", "/auth/reset-password", "/guides"];
+  const publicPaths = [
+    "/login",
+    "/auth/callback",
+    "/auth/reset-password",
+    "/guides",
+    "/terms",
+    "/privacy",
+    "/cookies",
+    "/road-signs",
+  ];
   const isPublicPath =
     publicPaths.includes(pathname) ||
     pathname.startsWith("/auth/callback") ||
-    pathname.startsWith("/dmv/") ||
-    pathname === "/road-signs";
+    pathname.startsWith("/dmv/");
 
   if (!user && !isPublicPath) {
     const loginUrl = new URL("/login", request.url);

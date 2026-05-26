@@ -1,0 +1,170 @@
+[
+  {
+    "state_code": "CO",
+    "prompt": "To control your vehicle's speed and prevent severe brake fade while descending a steep mountain grade in Colorado, your safest mechanical action is to:",
+    "choices": [
+      "Pump the brake pedal vigorously all the way down the mountain",
+      "Shift your transmission into a lower gear",
+      "Turn the engine off and coast in neutral",
+      "Apply the emergency parking brake lightly"
+    ],
+    "answer_index": 1,
+    "explanation": "Riding your brakes down a steep grade can cause them to overheat and fail. Shifting to a lower gear allows the engine's compression to safely control your descent speed.",
+    "category": "weather_driving",
+    "difficulty": "medium"
+  },
+  {
+    "state_code": "CO",
+    "prompt": "In Colorado, law enforcement can charge a driver with Driving While Ability Impaired (DWAI), a lesser but serious alcohol offense, with a Blood Alcohol Concentration (BAC) as low as:",
+    "choices": [
+      "0.02%",
+      "0.04%",
+      "0.05%",
+      "0.08%"
+    ],
+    "answer_index": 2,
+    "explanation": "While standard DUI is 0.08%, Colorado law includes a DWAI charge. If your BAC is between 0.05% and 0.079%, you can be arrested for Driving While Ability Impaired.",
+    "category": "dui_alcohol_laws",
+    "difficulty": "hard"
+  },
+  {
+    "state_code": "CO",
+    "prompt": "Under Colorado's Move Over Law, if you approach a stationary emergency vehicle or tow truck with flashing lights and traffic prevents you from safely changing lanes, you must:",
+    "choices": [
+      "Stop completely in your lane and wait for directions",
+      "Maintain your speed but honk to alert the workers of your presence",
+      "Reduce your speed to at least 20 mph below the posted speed limit",
+      "Accelerate to clear the dangerous area quickly"
+    ],
+    "answer_index": 2,
+    "explanation": "If you cannot safely shift one lane away from a stationary emergency or maintenance vehicle in Colorado, the law requires you to reduce your speed to at least 20 mph below the posted limit.",
+    "category": "emergency_vehicles",
+    "difficulty": "medium"
+  },
+  {
+    "state_code": "CO",
+    "prompt": "During severe winter snowstorms, the Colorado Department of Transportation may implement a Passenger Vehicle Traction Law (Code 15). What does this mandate for motorists?",
+    "choices": [
+      "All vehicles are banned from the highway except snowplows",
+      "Vehicles must have snow tires, M+S rated tires, or carry traction devices like chains or AutoSocks",
+      "Only four-wheel-drive (4WD) vehicles are permitted on mountain passes",
+      "All passenger vehicles must follow behind a state pilot car"
+    ],
+    "answer_index": 1,
+    "explanation": "Under a Code 15 Traction Law, all motorists must have either 4WD/AWD, snow tires, tires with the mud/snow (M+S) designation, or carry alternative traction devices like chains or AutoSocks.",
+    "category": "weather_driving",
+    "difficulty": "hard"
+  },
+  {
+    "state_code": "CO",
+    "prompt": "When approaching a multi-lane roundabout intersection in Colorado, which vehicles hold the legal right-of-way?",
+    "choices": [
+      "The larger, heavier commercial vehicles",
+      "Traffic attempting to enter the roundabout from the right",
+      "Traffic that is already circulating inside the roundabout",
+      "Vehicles attempting to exit the roundabout"
+    ],
+    "answer_index": 2,
+    "explanation": "Drivers entering a roundabout must always yield the right-of-way to vehicles, bicyclists, and pedestrians already circulating inside the traffic circle.",
+    "category": "intersections",
+    "difficulty": "easy"
+  },
+  {
+    "state_code": "CO",
+    "prompt": "When a school bus stops and activates its flashing red lights and stop arm on a standard two-lane Colorado road, drivers approaching from both directions must stop at least:",
+    "choices": [
+      "10 feet away",
+      "20 feet away",
+      "50 feet away",
+      "100 feet away"
+    ],
+    "answer_index": 1,
+    "explanation": "Colorado law requires that vehicles approaching from any direction must stop at least 20 feet away from a school bus displaying flashing red lights and an extended stop signal arm.",
+    "category": "school_zones",
+    "difficulty": "medium"
+  },
+  {
+    "state_code": "CO",
+    "prompt": "According to Colorado state law, what are the restrictions regarding cell phone use for drivers who are under the age of 18?",
+    "choices": [
+      "They may use a cell phone only if it is completely hands-free",
+      "They may send text messages while stopped at a red traffic light",
+      "They are strictly prohibited from using a cell phone for any reason, except to contact emergency services",
+      "They may use a handheld phone if a parent is in the passenger seat"
+    ],
+    "answer_index": 2,
+    "explanation": "Drivers under 18 in Colorado are prohibited from using a mobile phone while driving for any reason, including hands-free devices, unless they are contacting the police or fire department in an emergency.",
+    "category": "distracted_driving",
+    "difficulty": "easy"
+  },
+  {
+    "state_code": "CO",
+    "prompt": "Unless otherwise posted by signage, what is the maximum statutory speed limit on narrow, winding mountain highways and blind curves in Colorado?",
+    "choices": [
+      "15 mph",
+      "20 mph",
+      "25 mph",
+      "35 mph"
+    ],
+    "answer_index": 1,
+    "explanation": "Due to the treacherous nature of the terrain, Colorado sets the baseline maximum speed limit on narrow, winding mountain highways and blind curves at 20 mph.",
+    "category": "speed_limits",
+    "difficulty": "hard"
+  },
+  {
+    "state_code": "CO",
+    "prompt": "You are driving on a multi-lane Colorado highway and a motorcyclist is traveling in your lane ahead of you. Are you legally permitted to share the same lane side-by-side with the motorcycle?",
+    "choices": [
+      "Yes, if the lane is wide enough to accommodate both comfortably",
+      "Yes, but only during daylight hours",
+      "No, a passenger vehicle may never share a lane with a motorcycle",
+      "No, unless the motorcyclist motions for you to pull up next to them"
+    ],
+    "answer_index": 2,
+    "explanation": "Motorcycles are entitled to the full width of a traffic lane. While two motorcycles may share a single lane side-by-side, a passenger car is strictly prohibited from sharing a lane with a motorcycle.",
+    "category": "motorcycle_awareness",
+    "difficulty": "medium"
+  },
+  {
+    "state_code": "CO",
+    "prompt": "You are parallel parking your vehicle facing downhill on a steep mountain street that does not have a physical curb. To secure the vehicle safely, which way should you turn your front wheels?",
+    "choices": [
+      "Perfectly straight ahead",
+      "Sharply to the left (toward the center of the road)",
+      "Sharply to the right (toward the shoulder or edge of the road)",
+      "It does not matter as long as the emergency brake is fully engaged"
+    ],
+    "answer_index": 2,
+    "explanation": "When parking downhill without a curb, always turn your wheels sharply to the right. If the brakes fail, the vehicle will roll off the roadway into the shoulder/dirt rather than into oncoming traffic.",
+    "category": "parking",
+    "difficulty": "easy"
+  },
+  {
+    "state_code": "CO",
+    "prompt": "When passing a bicyclist who is traveling in the same direction on a Colorado roadway, state law mandates that a motor vehicle must leave a minimum physical clearance of at least:",
+    "choices": [
+      "2 feet",
+      "3 feet",
+      "5 feet",
+      "One full traffic lane"
+    ],
+    "answer_index": 1,
+    "explanation": "Colorado law requires motorists to give bicyclists at least 3 feet of space between the widest part of their vehicle and the widest part of the bicyclist when passing.",
+    "category": "passing_rules",
+    "difficulty": "medium"
+  },
+  {
+    "state_code": "CO",
+    "prompt": "As you travel down an entrance ramp to merge onto I-25 in Colorado, your primary responsibility as the merging driver is to:",
+    "choices": [
+      "Force highway traffic to change lanes by signaling aggressively",
+      "Drive to the very end of the ramp and come to a complete stop to check for traffic",
+      "Accelerate to match the speed of freeway traffic and yield to vehicles already on the highway",
+      "Cross the solid white line early to merge as quickly as possible"
+    ],
+    "answer_index": 2,
+    "explanation": "The vehicle entering the freeway must yield the right-of-way. You should use the acceleration lane to match the speed of highway traffic and merge seamlessly when a safe gap appears.",
+    "category": "merging",
+    "difficulty": "easy"
+  }
+]

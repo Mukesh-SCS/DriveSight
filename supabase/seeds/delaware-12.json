@@ -1,0 +1,170 @@
+[
+  {
+    "state_code": "DE",
+    "prompt": "Under Delaware's distracted driving laws, what is the policy regarding the use of handheld electronic devices while driving?",
+    "choices": [
+      "They are prohibited only for drivers under the age of 18",
+      "They are banned entirely for all drivers, making it illegal to hold a phone to talk, text, or browse",
+      "They may be used to read messages, but not to type them",
+      "They are legal to use as long as the vehicle is traveling under 40 mph"
+    ],
+    "answer_index": 1,
+    "explanation": "Delaware enforces a strict hands-free law. It is illegal for all drivers, regardless of age, to use a handheld electronic device while operating a motor vehicle.",
+    "category": "distracted_driving",
+    "difficulty": "easy"
+  },
+  {
+    "state_code": "DE",
+    "prompt": "To protect highway construction crews, Delaware law authorizes what specific penalty enhancement for traffic violations committed within an active work zone?",
+    "choices": [
+      "The automatic suspension of the driver's license for 30 days",
+      "Fines for associated traffic offenses are doubled",
+      "The violator's vehicle is subject to immediate impoundment",
+      "Community service is mandatory instead of monetary fines"
+    ],
+    "answer_index": 1,
+    "explanation": "Under Delaware law, fines for associated traffic violations, including speeding, are doubled when the offense is committed within the limits of a highway work zone.",
+    "category": "work_zones",
+    "difficulty": "medium"
+  },
+  {
+    "state_code": "DE",
+    "prompt": "In Delaware, driving a vehicle on a public roadway at a speed of 90 miles per hour or greater will automatically result in what severe charge?",
+    "choices": [
+      "A simple speeding infraction with no points assessed",
+      "A warning and mandatory defensive driving course",
+      "Reckless driving",
+      "A felony conviction"
+    ],
+    "answer_index": 2,
+    "explanation": "According to the Delaware Code, driving a vehicle on a public roadway at 90 mph or more is explicitly classified as reckless driving, carrying significant fines and potential license suspension.",
+    "category": "speed_limits",
+    "difficulty": "hard"
+  },
+  {
+    "state_code": "DE",
+    "prompt": "When you are preparing to enter a multi-lane roundabout in Delaware, which traffic holds the legal right-of-way?",
+    "choices": [
+      "Vehicles attempting to enter the roundabout from your right",
+      "Vehicles that are already circulating inside the roundabout",
+      "Commercial trucks and large SUVs",
+      "Vehicles attempting to exit the roundabout"
+    ],
+    "answer_index": 1,
+    "explanation": "When approaching a roundabout, drivers must yield to vehicles, bicyclists, and pedestrians that are already actively circulating within the intersection.",
+    "category": "intersections",
+    "difficulty": "easy"
+  },
+  {
+    "state_code": "DE",
+    "prompt": "For a standard Delaware driver over the age of 21, it is illegal to operate a motor vehicle with a Blood Alcohol Concentration (BAC) of:",
+    "choices": [
+      "0.02% or higher",
+      "0.04% or higher",
+      "0.06% or higher",
+      "0.08% or higher"
+    ],
+    "answer_index": 3,
+    "explanation": "In Delaware, as in the rest of the nation, a BAC of 0.08% or higher constitutes driving under the influence for standard non-commercial drivers over the age of 21.",
+    "category": "dui_alcohol_laws",
+    "difficulty": "easy"
+  },
+  {
+    "state_code": "DE",
+    "prompt": "When approaching a railroad crossing in Delaware where red warning lights are flashing and gates are lowered, you must stop your vehicle:",
+    "choices": [
+      "Directly on the tracks to wait",
+      "Between 15 and 50 feet from the nearest rail",
+      "No less than 100 feet away",
+      "Only if you physically see a train approaching"
+    ],
+    "answer_index": 1,
+    "explanation": "State law mandates that when railroad crossing gates are lowered or warning signals are active, you must come to a complete stop between 15 and 50 feet from the nearest rail.",
+    "category": "railroad_crossings",
+    "difficulty": "hard"
+  },
+  {
+    "state_code": "DE",
+    "prompt": "You are driving on a two-lane road in Delaware and a school bus traveling in the opposite direction has stopped with its red lights flashing. What must you do?",
+    "choices": [
+      "Slow down to 10 mph and pass with extreme caution",
+      "You are not required to stop because you are in the opposing lane",
+      "Come to a complete stop and remain stopped until the red lights cease flashing",
+      "Honk your horn before passing the bus on the left"
+    ],
+    "answer_index": 2,
+    "explanation": "On a two-lane undivided highway, traffic traveling in both directions must come to a full stop for a school bus with actively flashing red lights.",
+    "category": "school_zones",
+    "difficulty": "medium"
+  },
+  {
+    "state_code": "DE",
+    "prompt": "Delaware's Move Over law requires motorists to shift over a lane or slow down significantly for which of the following stationary vehicles with active flashing lights?",
+    "choices": [
+      "Police vehicles and ambulances only",
+      "Fire engines only",
+      "Any authorized emergency vehicle, tow truck, or DelDOT vehicle",
+      "Only vehicles actively blocking a travel lane"
+    ],
+    "answer_index": 2,
+    "explanation": "The Move Over law explicitly protects police, fire, ambulance, tow trucks, and Delaware Department of Transportation (DelDOT) vehicles actively displaying their warning lights.",
+    "category": "emergency_vehicles",
+    "difficulty": "medium"
+  },
+  {
+    "state_code": "DE",
+    "prompt": "Delaware law mandates that all vehicles must have their headlights turned on during which specific time period?",
+    "choices": [
+      "Only when visibility is less than 500 feet",
+      "From one-half hour after sunset to one-half hour before sunrise",
+      "From 8:00 PM to 6:00 AM exclusively",
+      "Whenever the vehicle is traveling faster than 55 mph"
+    ],
+    "answer_index": 1,
+    "explanation": "You are required to use your headlights from a half-hour after sunset until a half-hour before sunrise, or whenever visibility is poor.",
+    "category": "weather_driving",
+    "difficulty": "medium"
+  },
+  {
+    "state_code": "DE",
+    "prompt": "You are preparing to make a right turn at a solid red traffic light in Delaware. Unless a sign prohibits it, what is the correct legal procedure?",
+    "choices": [
+      "Slow down, verify there is no cross traffic, and turn without stopping completely",
+      "Come to a complete stop, yield the right-of-way to pedestrians and oncoming traffic, and turn when safe",
+      "Wait for the pedestrian walk signal to end before turning",
+      "You may turn immediately because turning right on red grants you the right-of-way"
+    ],
+    "answer_index": 1,
+    "explanation": "To make a legal right turn on red, you must first come to a full and complete stop at the stop line, yield to any cross traffic or pedestrians, and then proceed when it is safe.",
+    "category": "traffic_signals",
+    "difficulty": "easy"
+  },
+  {
+    "state_code": "DE",
+    "prompt": "Commercial semi-trucks have extensive blind spots where the driver cannot see passenger vehicles. These dangerous areas are commonly referred to as the:",
+    "choices": [
+      "Zero-Zones",
+      "Blind-Boxes",
+      "No-Zones",
+      "Phantom-Lanes"
+    ],
+    "answer_index": 2,
+    "explanation": "The 'No-Zones' are large blind spots located around the front, sides, and rear of commercial trucks. If you cannot see the truck's mirrors, the driver cannot see you.",
+    "category": "defensive_driving",
+    "difficulty": "easy"
+  },
+  {
+    "state_code": "DE",
+    "prompt": "A solid double yellow line running down the center of a two-way Delaware roadway indicates that:",
+    "choices": [
+      "The lane is reserved exclusively for High Occupancy Vehicles (HOV)",
+      "Passing is prohibited for traffic traveling in both directions",
+      "You may pass if the vehicle ahead is traveling below the speed limit",
+      "Passing is permitted during daylight hours only"
+    ],
+    "answer_index": 1,
+    "explanation": "A solid double yellow line means that neither lane of traffic is permitted to cross the centerline to pass another vehicle.",
+    "category": "lane_changes",
+    "difficulty": "easy"
+  }
+]

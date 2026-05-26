@@ -1,0 +1,170 @@
+[
+  {
+    "state_code": "CA",
+    "prompt": "In California, municipal curbs are often painted specific colors to indicate parking rules. What does a painted green curb signify?",
+    "choices": [
+      "Parking is strictly reserved for zero-emission or electric vehicles",
+      "Parking is permitted for a limited time, which is usually painted on the curb or posted on a sign",
+      "The zone is reserved exclusively for loading and unloading passengers",
+      "No stopping, standing, or parking under any circumstances"
+    ],
+    "answer_index": 1,
+    "explanation": "A green painted curb in California means parking is limited to a specific amount of time. The time limit is typically painted directly on the curb or posted on a nearby sign.",
+    "category": "parking",
+    "difficulty": "medium"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "California is unique regarding its traffic laws for motorcycles. What is the legal status of 'lane splitting' (riding a motorcycle between rows of stopped or moving traffic) in the state?",
+    "choices": [
+      "It is strictly illegal and carries heavy moving violation fines",
+      "It is legal only when freeway traffic is completely stopped",
+      "It is fully legal if done in a safe and prudent manner",
+      "It is only permitted for active duty law enforcement officers"
+    ],
+    "answer_index": 2,
+    "explanation": "California is the first state to formally legalize lane splitting. Motorcyclists are legally allowed to ride between lanes of traffic as long as it is done safely and prudently.",
+    "category": "motorcycle_awareness",
+    "difficulty": "medium"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "Unless signage explicitly posts a different speed, what is the maximum speed limit in a California school zone when children are present outside or crossing the street?",
+    "choices": [
+      "15 mph",
+      "20 mph",
+      "25 mph",
+      "35 mph"
+    ],
+    "answer_index": 2,
+    "explanation": "The speed limit is 25 mph when driving within 500 to 1,000 feet of a school while children are outside or crossing the street, unless posted otherwise.",
+    "category": "school_zones",
+    "difficulty": "easy"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "Under California's Zero Tolerance Law for drivers under the age of 21, what minimum Blood Alcohol Concentration (BAC) will trigger an immediate one-year license suspension?",
+    "choices": [
+      "0.01% or higher",
+      "0.04% or higher",
+      "0.05% or higher",
+      "0.08% or higher"
+    ],
+    "answer_index": 0,
+    "explanation": "California enforces a strict Zero Tolerance law for underage drinking. If a driver under 21 tests with a BAC of 0.01% or higher, their driving privilege is suspended for one year.",
+    "category": "dui_alcohol_laws",
+    "difficulty": "hard"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "You arrive at a 'T' intersection where your dead-end road meets a through highway. There are no stop or yield signs present. Who holds the right-of-way?",
+    "choices": [
+      "The vehicle that arrives at the intersection first",
+      "The vehicle traveling on the dead-end road",
+      "Vehicles traveling on the continuing through road",
+      "The vehicle attempting to make a right turn"
+    ],
+    "answer_index": 2,
+    "explanation": "At a T-intersection without STOP or YIELD signs, traffic traveling on the through road holds the right-of-way. The driver on the road that ends must yield.",
+    "category": "right_of_way",
+    "difficulty": "medium"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "While traveling on a California freeway, you decide to enter the Carpool (HOV) lane, which is currently separated from your lane by a continuous solid double white line. Your legal action is to:",
+    "choices": [
+      "Cross the double white line carefully if your blinker has been on for 3 seconds",
+      "Wait until the solid double white line transitions into a broken white line",
+      "Cross only if you have three or more passengers in the vehicle",
+      "Merge immediately if freeway traffic has slowed below 45 mph"
+    ],
+    "answer_index": 1,
+    "explanation": "It is illegal to cross solid double white lines on a California freeway. You must wait for a designated entry/exit point marked by broken white lines to enter or exit the HOV lane.",
+    "category": "freeway_driving",
+    "difficulty": "easy"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "When driving through dense Tule fog in the Central Valley, which vehicle lighting configuration should you use to maximize your visibility and avoid blinding yourself?",
+    "choices": [
+      "High-beam headlights",
+      "Parking lights only",
+      "Low-beam headlights",
+      "Hazard lights with headlights turned off"
+    ],
+    "answer_index": 2,
+    "explanation": "In dense fog, you should always use low-beam headlights. High beams will reflect off the moisture particles in the fog, creating glare and severely reducing your ability to see.",
+    "category": "weather_driving",
+    "difficulty": "easy"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "Unless otherwise posted, what is the maximum statutory speed limit on a two-lane undivided highway in California?",
+    "choices": [
+      "55 mph",
+      "60 mph",
+      "65 mph",
+      "70 mph"
+    ],
+    "answer_index": 0,
+    "explanation": "The maximum speed limit on most California highways is 65 mph, but for a two-lane undivided highway, the maximum speed limit drops to 55 mph unless posted otherwise.",
+    "category": "speed_limits",
+    "difficulty": "hard"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "A school bus is traveling ahead of you in your lane. Suddenly, its yellow lights begin flashing. What does this specific signal indicate?",
+    "choices": [
+      "The bus is currently boarding children and you must stop immediately",
+      "The bus is experiencing mechanical failure and is pulling over",
+      "The bus is preparing to stop to load or unload children; you should slow down and prepare to stop",
+      "The bus is accelerating to merge onto a faster roadway"
+    ],
+    "answer_index": 2,
+    "explanation": "Flashing yellow lights on a school bus warn drivers that the bus is preparing to stop to load or unload passengers. You should slow down and prepare to stop when the red lights flash.",
+    "category": "school_zones",
+    "difficulty": "medium"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "In California, under what specific circumstance is it legally permissible to pass a vehicle on the right using the unpaved shoulder of the road?",
+    "choices": [
+      "When the vehicle ahead is making a left turn",
+      "Never; passing on an unpaved shoulder is strictly prohibited",
+      "When traffic is fully stopped and you need to reach an exit ramp",
+      "If you are driving a four-wheel-drive vehicle"
+    ],
+    "answer_index": 1,
+    "explanation": "You may never drive off the paved or main-traveled portion of the road or onto the shoulder to pass another vehicle, regardless of what the vehicle ahead is doing.",
+    "category": "passing_rules",
+    "difficulty": "easy"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "Under California's distracted driving laws, how may a driver aged 18 or older legally interact with a smartphone while operating a vehicle?",
+    "choices": [
+      "They may hold the phone to text if stopped at a red light",
+      "They may hold the phone for phone calls, but not for texting",
+      "They may only use it in hands-free mode, and it must be securely mounted to the windshield or dashboard",
+      "They are strictly prohibited from using a smartphone in any capacity"
+    ],
+    "answer_index": 2,
+    "explanation": "California drivers 18 and older may only use a smartphone if it is utilized in a completely hands-free manner (like Bluetooth or voice command) and is securely mounted out of airbag deployment zones.",
+    "category": "distracted_driving",
+    "difficulty": "medium"
+  },
+  {
+    "state_code": "CA",
+    "prompt": "You are stopped at a solid red traffic light and intend to make a right turn. Assuming no signs prohibit the maneuver, what is the proper legal sequence of actions?",
+    "choices": [
+      "Slow down to 5 mph, yield to cross traffic, and turn",
+      "Come to a complete stop, yield to pedestrians and oncoming traffic, and turn only when safe",
+      "Turn immediately, as turning right on red grants you the right-of-way",
+      "Wait until the crosswalk countdown timer reaches zero, then turn"
+    ],
+    "answer_index": 1,
+    "explanation": "To legally turn right on a solid red light in California, you must first come to a complete stop behind the limit line, yield to all pedestrians and cross traffic, and then proceed if safe.",
+    "category": "traffic_signals",
+    "difficulty": "easy"
+  }
+]

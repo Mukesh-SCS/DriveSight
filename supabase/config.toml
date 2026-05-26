@@ -1,0 +1,12 @@
+# Supabase project config (CLI / GitHub integration)
+# https://supabase.com/docs/guides/cli/config
+
+[db]
+major_version = 15
+
+[db.migrations]
+enabled = true
+
+[db.seed]
+enabled = true
+sql_paths = ["./seed.sql"]

@@ -26,7 +26,10 @@ function formatDate(value: string | null) {
 export function UserProgressPanel({ progressRows }: UserProgressPanelProps) {
   if (progressRows.length === 0) {
     return (
-      <section className="progress-panel progress-panel-empty">
+      <section className="progress-panel progress-panel-empty progress-panel--colorful">
+        <span className="progress-empty-icon" aria-hidden="true">
+          📊
+        </span>
         <h2>Your study progress</h2>
         <p>Complete a practice test to unlock accuracy stats, streaks, and weak-area tracking.</p>
       </section>
@@ -43,19 +46,19 @@ export function UserProgressPanel({ progressRows }: UserProgressPanelProps) {
     totalAttempted === 0 ? 0 : Math.round((totalCorrect / totalAttempted) * 100);
 
   return (
-    <section className="progress-panel" aria-label="Your study progress">
+    <section className="progress-panel progress-panel--colorful" aria-label="Your study progress">
       <div className="progress-panel-head">
         <h2>Your study progress</h2>
         <div className="progress-overview">
-          <article className="progress-overview-stat">
+          <article className="progress-overview-stat progress-stat--tried">
             <strong>{totalAttempted}</strong>
             <span>Questions tried</span>
           </article>
-          <article className="progress-overview-stat">
+          <article className="progress-overview-stat progress-stat--accuracy">
             <strong>{overallAccuracy}%</strong>
             <span>Overall accuracy</span>
           </article>
-          <article className="progress-overview-stat">
+          <article className="progress-overview-stat progress-stat--streak">
             <strong>{Math.max(...sorted.map((row) => row.practiceStreak), 0)}</strong>
             <span>Best streak (days)</span>
           </article>
@@ -76,7 +79,7 @@ export function UserProgressPanel({ progressRows }: UserProgressPanelProps) {
                   <span>{adaptiveTierLabel(tier)} · Last practice {formatDate(progress.lastPracticeAt)}</span>
                 </div>
                 <Link
-                  className="text-button"
+                  className="progress-practice-btn"
                   href={`/states/${progress.stateCode.toLowerCase()}`}
                 >
                   Practice

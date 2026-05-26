@@ -17,6 +17,9 @@ export function getSitemapEntries(): MetadataRoute.Sitemap {
     { url: `${base}/`, lastModified: now, changeFrequency: "weekly", priority: 1 },
     { url: `${base}${guidesPath()}`, lastModified: now, changeFrequency: "weekly", priority: 0.95 },
     { url: `${base}/road-signs`, lastModified: now, changeFrequency: "monthly", priority: 0.85 },
+    { url: `${base}/terms`, lastModified: now, changeFrequency: "yearly", priority: 0.35 },
+    { url: `${base}/privacy`, lastModified: now, changeFrequency: "yearly", priority: 0.35 },
+    { url: `${base}/cookies`, lastModified: now, changeFrequency: "yearly", priority: 0.3 },
     { url: `${base}/login`, lastModified: now, changeFrequency: "yearly", priority: 0.2 },
   ];
 

@@ -36,7 +36,7 @@ export default async function Page() {
     .filter((row): row is NonNullable<typeof row> => Boolean(row));
 
   return (
-    <main className="app-shell">
+    <main className="app-shell dashboard-page">
       <Dashboard states={states} />
       <UserProgressPanel progressRows={progress} />
     </main>

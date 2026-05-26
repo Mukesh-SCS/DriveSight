@@ -3,6 +3,7 @@ import { Plus_Jakarta_Sans } from "next/font/google";
 import Script from "next/script";
 import type { ReactNode } from "react";
 import { AppHeader } from "@/components/AppHeader";
+import { SiteFooter } from "@/components/SiteFooter";
 import { SITE_CONFIG } from "@/lib/seo/config";
 import { buildPageMetadata } from "@/lib/seo/metadata";
 import "./globals.css";
@@ -42,7 +43,7 @@ export default function RootLayout({
 }>) {
   return (
     <html className={jakarta.variable} lang="en" suppressHydrationWarning>
-      <body className={jakarta.className} suppressHydrationWarning>
+      <body className={`${jakarta.className} site-body`} suppressHydrationWarning>
         <Script id="remove-pronounce-extension-root" strategy="beforeInteractive">
           {`
             (() => {
@@ -69,6 +70,7 @@ export default function RootLayout({
         </Script>
         <AppHeader />
         {children}
+        <SiteFooter />
       </body>
     </html>
   );
